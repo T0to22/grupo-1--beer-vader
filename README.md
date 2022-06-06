@@ -23,7 +23,15 @@ Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y
 ## Beer Vader Somos:
 
 ### Giuli
+
+
 ### Ale
+
+
 ### Tano
+
+
 ### Gonza
+
+
 ### Toto
