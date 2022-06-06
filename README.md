@@ -35,6 +35,6 @@ Estoy tratando de cambiar mis propios paradigmas de vida.-
 
 
 ### Gonza
-
+Mi familia, el fernet y Talleres.
 
 ### Toto
