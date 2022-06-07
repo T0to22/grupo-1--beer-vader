@@ -46,15 +46,9 @@ Guia Espiritual (segun mis compas).
 
 
 ## Nuestro Proyecto
-[Beer Vader]
-
-[Beer Vader]: https://github.com/T0to22/grupo-1--beer-vader
+[Beer Vader](https://github.com/T0to22/grupo-1--beer-vader)
 
 ## Nuestros Referentes
-[Cerveza Guiness]
-[Delirium Tremens]
-[Heineken]
-
-[Cerveza Guiness]: https://www.guinness.com/
-[Delirium Tremens]: https://www.delirium.be/
-[Heineken]: https://www.heineken.com/
+[Cerveza Guiness](https://www.guinness.com/) \
+[Delirium Tremens](https://www.delirium.be/) \
+[Heineken](https://www.heineken.com/)
