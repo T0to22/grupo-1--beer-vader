@@ -1,3 +1,4 @@
+![Logo Beer Vader](/design/logo-bv.png "Logo Beer Vader")
 # Beer Vader:
 
 Beer Vader ofrece a sus clientes una experiencia definitiva relacionada a la cerveza artesanal.
@@ -16,6 +17,14 @@ Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y
     - Storm Trooper -> Scottish
     - R2D2 -> Kölsch
     - Chuwbacca -> Pale Ale (IPA)
+
+## Nuestro Proyecto
+[Beer Vader](https://github.com/T0to22/grupo-1--beer-vader)
+
+## Nuestros Referentes
+[Cerveza Guiness](https://www.guinness.com/) \
+[Delirium Tremens](https://www.delirium.be/) \
+[Heineken](https://www.heineken.com/)
 
 
 ## Beer Vader Somos:
@@ -45,10 +54,3 @@ Star Wars, Jurassic Park, Guns N Roses, Pink Floyd y Los Beatles. El Principito 
 Guia Espiritual (segun mis compas).
 
 
-## Nuestro Proyecto
-[Beer Vader](https://github.com/T0to22/grupo-1--beer-vader)
-
-## Nuestros Referentes
-[Cerveza Guiness](https://www.guinness.com/) \
-[Delirium Tremens](https://www.delirium.be/) \
-[Heineken](https://www.heineken.com/)
