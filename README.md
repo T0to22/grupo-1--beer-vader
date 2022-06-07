@@ -22,8 +22,8 @@ Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y
 [Beer Vader](https://github.com/T0to22/grupo-1--beer-vader)
 
 ## Nuestros Referentes
-[Cerveza Guiness](https://www.guinness.com/) \
-[Delirium Tremens](https://www.delirium.be/) \
+[Cerveza Guiness](https://www.guinness.com/)
+[Delirium Tremens](https://www.delirium.be/)
 [Heineken](https://www.heineken.com/)
 
 
@@ -33,7 +33,6 @@ Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y
 Soy abogada, una persona muy sociable, sensible y empática.
 Me gusta mucho ir al gimnasio, estar al aire libre, aprender cosas nuevas y tener charlas profundas. Hincha de River.
 Estoy tratando de cambiar mis propios paradigmas de vida.
-
 
 ### Ale
 Alejandro, de la Ciudad de La Plata, hincha de Racing. Me gusta el gimnasio, me gusta la cerveza y el asado.
@@ -49,8 +48,6 @@ Y claro...de la birra bien fría y Star Wars.
 Mi familia, el fernet y Talleres.
 
 ### Toto
-Fotografo, musico, melomano, paciente. Me gusta la montaña, team invierno, los atardeceres y el mate amargo.
+Fotógrafo, músico, melómano, paciente. Me gusta la montaña, los atardeceres y el mate amargo.
 Star Wars, Jurassic Park, Guns N Roses, Pink Floyd y Los Beatles. El Principito me cambio la vida.
 Guia Espiritual (segun mis compas).
-
-
