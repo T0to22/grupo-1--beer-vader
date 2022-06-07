@@ -22,8 +22,8 @@ Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y
 [Beer Vader](https://github.com/T0to22/grupo-1--beer-vader)
 
 ## Nuestros Referentes
-[Cerveza Guiness](https://www.guinness.com/)
-[Delirium Tremens](https://www.delirium.be/)
+[Cerveza Guiness](https://www.guinness.com/) \
+[Delirium Tremens](https://www.delirium.be/) \
 [Heineken](https://www.heineken.com/)
 
 
@@ -45,7 +45,8 @@ Fundamentalista de Diego Armando Maradona
 Y claro...de la birra bien fría y Star Wars.
 
 ### Gonza
-Mi familia, el fernet y Talleres.
+Soy Gonza, tengo 30 años y trabajo en un taller de Chapa y pintura automotriz.
+Familiero, fanatico de Talleres y de Maradona, amante del fernet y el vino tinto.
 
 ### Toto
 Fotógrafo, músico, melómano, paciente. Me gusta la montaña, los atardeceres y el mate amargo.
