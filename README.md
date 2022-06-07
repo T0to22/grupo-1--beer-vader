@@ -1,7 +1,3 @@
-# grupo-1--beer-vader
-
-
-=======
 ### grupo-1--beer-vader
 
 # Beer Vader:
