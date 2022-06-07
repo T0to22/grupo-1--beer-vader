@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # grupo-1--beer-vader
 
 
@@ -47,4 +46,3 @@ Y claro...de la birra bien fría y Star Wars.
 Mi familia, el fernet y Talleres.
 
 ### Toto
->>>>>>> produccion
