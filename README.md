@@ -4,7 +4,7 @@
 
 Beer Vader ofrece a sus clientes una experiencia definitiva relacionada a la cerveza artesanal.
 
-Apuntamos a aquellos quirean disfrutar de una cerveza artesanal de excelente calidad, elaborada con los mejores materiales, cuidando y controlando todas las partes del proceso de creacion de nuestros diferentes productos.
+Apuntamos a aquellos quieran disfrutar de una cerveza artesanal de excelente calidad, elaborada con los mejores materiales, cuidando y controlando todas las partes del proceso de creacion de nuestros diferentes productos.
 
 Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y la Bock y por el lado de las Ale, ofrecemos Kolsch, Porter y Pale Ale (IPA).
 
@@ -22,16 +22,25 @@ Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y
 
 ## Beer Vader Somos:
 
-### Giuli
+### Giuli 
+Soy abogada, una persona muy sociable, sensible y empática.
+Me gusta mucho ir al gimnasio, estar al aire libre, aprender cosas nuevas y tener charlas profundas.
+Estoy tratando de cambiar mis propios paradigmas de vida.- 
 
 
 ### Ale
 
 
 ### Tano
-
+Adrián "Tano" Di Palma
+Tengo 42 años, soy Uruguayo y Manya hasta la médula.
+Papá de mellis de 10 años, Juan Cruz y Bautista.
+Fundamentalista de Diego Armando Maradona
+Y claro...de la birra bien fría y Star Wars.
 
 ### Gonza
-
+Mi familia, el fernet y Talleres.
 
 ### Toto
+Esta es mi descripcion
+Guia Espiritual.
