@@ -1,35 +1,33 @@
-### grupo-1--beer-vader
-
 # Beer Vader:
 
 Beer Vader ofrece a sus clientes una experiencia definitiva relacionada a la cerveza artesanal.
 
 Apuntamos a aquellos quieran disfrutar de una cerveza artesanal de excelente calidad, elaborada con los mejores materiales, cuidando y controlando todas las partes del proceso de creacion de nuestros diferentes productos.
 
-Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y la Bock y por el lado de las Ale, ofrecemos Kolsch, Porter y Pale Ale (IPA).
+Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y la Helles y por el lado de las Ale, ofrecemos Kölsch, Scottish y Pale Ale (IPA).
 
 ## Tipos de Cervezas:
 
-### Lager
-    - Pilsner -> C3PO
-    - Bock -> Darth Vader
+### Lagers
+    - C3PO -> Pilsner
+    - Han Solo -> Helles
 
-### Ale
-    - Scottish -> Storm Trooper
-    - Porter -> Arturito
-    - Pale Ale (IPA) -> Chuwbacca
+### Ales
+    - Storm Trooper -> Scottish
+    - R2D2 -> Kölsch
+    - Chuwbacca -> Pale Ale (IPA)
 
 
 ## Beer Vader Somos:
 
 ### Giuli 
 Soy abogada, una persona muy sociable, sensible y empática.
-Me gusta mucho ir al gimnasio, estar al aire libre, aprender cosas nuevas y tener charlas profundas.
-Estoy tratando de cambiar mis propios paradigmas de vida.- 
+Me gusta mucho ir al gimnasio, estar al aire libre, aprender cosas nuevas y tener charlas profundas. Hincha de River.
+Estoy tratando de cambiar mis propios paradigmas de vida.
 
 
 ### Ale
-
+Alejandro, de la Ciudad de La Plata, hincha de Racing. Me gusta el gimnasio, me gusta la cerveza y el asado.
 
 ### Tano
 Adrián "Tano" Di Palma
@@ -42,5 +40,15 @@ Y claro...de la birra bien fría y Star Wars.
 Mi familia, el fernet y Talleres.
 
 ### Toto
-Esta es mi descripcion
-Guia Espiritual.
+Fotografo, musico, melomano, paciente. Me gusta la montaña, team invierno, los atardeceres y el mate amargo.
+Star Wars, Jurassic Park, Guns N Roses, Pink Floyd y Los Beatles. El Principito me cambio la vida.
+Guia Espiritual (segun mis compas).
+
+
+## Nuestro Proyecto
+[Beer Vader]: https://github.com/T0to22/grupo-1--beer-vader
+
+## Nuestros Referentes
+[Cerveza Guiness]: https://www.guinness.com/
+[Delirium Tremens]: https://www.delirium.be/
+[Heineken]: https://www.heineken.com/
