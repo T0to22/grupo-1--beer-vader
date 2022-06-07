@@ -39,7 +39,7 @@ Fundamentalista de Diego Armando Maradona
 Y claro...de la birra bien fría y Star Wars.
 
 ### Gonza
-Mi familia, el fernet y Talleres.
+Mi familia, Talleres y el fernet.
 
 ### Toto
 Esta es mi descripcion
