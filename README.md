@@ -4,7 +4,7 @@
 
 Beer Vader ofrece a sus clientes una experiencia definitiva relacionada a la cerveza artesanal.
 
-Apuntamos a aquellos quirean disfrutar de una cerveza artesanal de excelente calidad, elaborada con los mejores materiales, cuidando y controlando todas las partes del proceso de creacion de nuestros diferentes productos.
+Apuntamos a aquellos quieran disfrutar de una cerveza artesanal de excelente calidad, elaborada con los mejores materiales, cuidando y controlando todas las partes del proceso de creacion de nuestros diferentes productos.
 
 Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y la Bock y por el lado de las Ale, ofrecemos Kolsch, Porter y Pale Ale (IPA).
 
