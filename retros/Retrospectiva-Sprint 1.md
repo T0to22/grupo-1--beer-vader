@@ -1,26 +1,5 @@
 # Retrospectiva - Sprint 1:
 
-## Toto:
-
-### Fortalezas:
-Tiempo
-Paciencia
-Backend
-
-### Debilidades
-Frontend
-Verborragea
-
-## Giu
-
-### Fortalezas:
-Perseverancia
-
-### Debilidades
-Frontend
-Verborragea
-
-
 ## ¿Qué ha salido bien en el Sprint anterior?
 Se cumplio con el Sprint
 Se cumplieron los plazos
@@ -42,15 +21,5 @@ El nivel de avance en la cursada, que permita estar al dia para poder dedicarle 
 
 
 ## ¿A qué mejora nos comprometemos para el próximo Sprint?
-A colaborar mas para aclarar dudas que permitan avanzar con seguridad
-
-
-
-
-
-
-
-
-
-ASIGNACION DE TAREAS
-TRELLO
+A colaborar mas para aclarar dudas que permitan avanzar con seguridad,
+a coordinar mas eficientemente reuniones que permitan aclarar dudas y avanzar sobre el codigo
