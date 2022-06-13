@@ -1,0 +1,3 @@
+
+Fuente principal del proyecto: Lato -> https://fonts.google.com/specimen/Lato
+Fuente alternativa del proyecto: Source Sans Pro -> https://fonts.google.com/specimen/Source+Sans+Pro
