@@ -1,0 +1,27 @@
+{
+  "name": "grupo-1--beer-vader",
+  "version": "1.0.0",
+  "description": "Proyecto Integrador para Digital House",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T0to22/grupo-1--beer-vader.git"
+  },
+  "keywords": [
+    "beer-vader"
+  ],
+  "author": "Grupo 1 -> Giu, Tano, Gonza, Ale y Toto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T0to22/grupo-1--beer-vader/issues"
+  },
+  "homepage": "https://github.com/T0to22/grupo-1--beer-vader#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
