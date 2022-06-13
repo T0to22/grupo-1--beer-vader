@@ -6,10 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beer Vader Brewery Co.</title>
     <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
-<body>
+<body class="background" data-src="images/background/background-alta.jpg">
 
-    <h1>Check Out</h1>
+    <header>
+        <nav>
+            <a class="linkLogoNavegacion" href="/">
+                <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader">
+            </a>
+
+            <ul class="barraNavegacion">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nuestras Cervezas</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout">
+
+        <table class="tablaCheckout">
+
+            <thead>
+                <tr class="headerTablaCheckout">
+                    <th style="width: 40%;">Item</th>
+                    <th style="width: 30%;">Precio</th>
+                    <th style="width: 30%;">Cantidad</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="filaCarrito">
+                    <td>
+                        <div class="contenedorItemCarrito">
+                            <div>
+                                <img class="imgCarrito" src="images/productos/han-solo.png" alt="Han Solo">
+                            </div>
+                            <div class="itemCarrito">
+                                <p class="descripcionItemCarrito">Helles Han Solo</p>
+                                <a class="btnQuitarDelCarrito" href="#">Quitar</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="precioItemCarrito">$10</td>
+                    <td class="cantidadItemCarrito">
+                        <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="filaCarrito">
+                    <td>
+                        <div class="contenedorItemCarrito">
+                            <div>
+                                <img class="imgCarrito" src="images/productos/storm-trooper.png" alt="Storm Trooper">
+                            </div>
+                            <div class="itemCarrito">
+                                <p class="descripcionItemCarrito">Scottish Storm Trooper</p>
+                                <a class="btnQuitarDelCarrito" href="#">Quitar</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="precioItemCarrito">$10</td>
+                    <td class="cantidadItemCarrito">
+                        <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <aside class="resumen">
+
+        <table class="tablaResumen">
+
+            <thead>
+                <tr>
+                    <th colspan="2">Resumen</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="filaSubtotal">
+                    <td class="subtotal" style="width: 50%;">Subtotal</td>
+                    <td class="valorSubtotal" style="width: 50%;">$10</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr class="filaTotal">
+                    <td class="total" style="width: 50%;">Total</td>
+                    <td class="valorTotal" style="width: 50%;">$10</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="edit" type="submit" name="edit" value="Edit" />
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </aside>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-content-left">
+                    <!-- <img class="logoFooter" src="images/logos/logo-footer.svg" alt="Logo Beer Vader"> -->
+                    <p class="textoFooter">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec eget nisl eu lectus rutrum consectetur.
+    </footer>
+
+    <script src="js/background.js"></script>
 
 </body>
 </html>
