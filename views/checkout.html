@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beer Vader Brewery Co.</title>
     <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/checkout.css">
 </head>
-<body class="background" data-src="images/background/background-alta.jpg">
+
+<!-- <body class="background" data-src="images/background/background-alta.jpg"> -->
+<body class="background" data-src="images/background/fondo2.jpg">
 
     <header>
         <nav>
@@ -128,7 +132,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input id="edit" type="submit" name="edit" value="Edit" />
+                        <input id="btnComprar" type="button" name="btnComprar" value="Comprar" class="btnComprar" />
                     </td>
                 </tr>
             </tfoot>
@@ -137,13 +141,72 @@
     </aside>
 
     <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-content-left">
-                    <!-- <img class="logoFooter" src="images/logos/logo-footer.svg" alt="Logo Beer Vader"> -->
-                    <p class="textoFooter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec eget nisl eu lectus rutrum consectetur.
+
+        <section class="boletinNovedades">
+
+            <h3>Boletín de Novedades</h3>
+            
+            <form class="formularioBoletinNovedades" action="">
+                <div>
+                    <input class="emailNovedades" type="email" name="emailNovedades" id="emailNovedades" placeholder="suscribite@beervader.com">
+
+                    <div class="divBotonBoletin">
+                        <input class="botonSuscribirBoletinNovedades" type="button" value="Suscribirme!">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="redesSociales">
+
+            <div class="iconosRedesSociales">
+
+                <a class="linkSocial" href="#">
+                    <img class="imgSocialesFooter" src="images/logos/logo-fb.svg" alt="">
+                </a>
+
+                <a class="LinkSocial" href="#">
+                    <img class="imgSocialesFooter" src="images/logos/logo-ig.svg" alt="">
+                </a>
+
+            </div>
+
+            <div class="copyright">
+                <p>©2022 - Beer Vader Brewery Co.</p>
+            </div>
+
+        </section>
+
+        <section class="productosFooter">
+
+            <div class="linkProductos">
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/c3po.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/r2d2.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/chuwbacca.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/han-solo.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/storm-trooper.png" alt="">
+                </a>
+
+            </div>
+
+        </section>
+
+
     </footer>
 
     <script src="js/background.js"></script>

@@ -1,66 +1,4 @@
-/* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-/* GENERALES */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background: url(/images/background/background-baja.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-family: 'Lato', sans-serif;
-	color: #f1f1f1;
-}
-
-header{
-	position: sticky;
-	top: 0;
-	background-color: rgba(0,0,0,0.5);
-}
-
-/* MENU DE NAVEGACION */
-nav{
-	display: flex;
-	padding: 10px;
-}
-
-.linkLogoNavegacion{
-	display: flex;
-}
-
-.logoNavegacion {
-	max-width: 50px;
-}
-
-.barraNavegacion {
-	display: flex;
-	margin-left: auto !important;
-	align-items: center;
-	margin: 10px;
-	list-style: none;
-}
-
-.barraNavegacion li {
-	margin-right: 10px;
-}
-
-.barraNavegacion li a {
-	text-decoration: none;
-	font-weight: 300;
-	color: #f1f1f1;
-}
-
-.barraNavegacion li a:hover {
-	color: #efb810;
-	font-weight: 400;
-}
 
 /* CHECKOUT */
 .checkout {
@@ -150,11 +88,27 @@ nav{
 	font-size: 18px;
 }
 
-/* FOOTER */
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 30vh;
-	border: 3px solid yellow;
+.btnComprar {
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: #272727;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	background-color: #efb810;
+	width: 80%;
 }
+
+.btnComprar:hover {
+	background-color: #1465bb;
+	color: #272727;
+}
+
+.btnComprar:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+	background-color: #f1f1f1;
+}
+  
