@@ -6,10 +6,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beer Vader Brewery Co.</title>
     <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
-<body>
 
-    <h1>Check Out</h1>
+<!-- <body class="background" data-src="images/background/background-alta.jpg"> -->
+<body class="background" data-src="images/background/fondo2.jpg">
+
+    <header>
+        <nav>
+            <a class="linkLogoNavegacion" href="/">
+                <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader">
+            </a>
+
+            <ul class="barraNavegacion">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nuestras Cervezas</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout">
+
+        <table class="tablaCheckout">
+
+            <thead>
+                <tr class="headerTablaCheckout">
+                    <th style="width: 40%;">Item</th>
+                    <th style="width: 30%;">Precio</th>
+                    <th style="width: 30%;">Cantidad</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="filaCarrito">
+                    <td>
+                        <div class="contenedorItemCarrito">
+                            <div>
+                                <img class="imgCarrito" src="images/productos/han-solo.png" alt="Han Solo">
+                            </div>
+                            <div class="itemCarrito">
+                                <p class="descripcionItemCarrito">Helles Han Solo</p>
+                                <a class="btnQuitarDelCarrito" href="#">Quitar</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="precioItemCarrito">$10</td>
+                    <td class="cantidadItemCarrito">
+                        <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="filaCarrito">
+                    <td>
+                        <div class="contenedorItemCarrito">
+                            <div>
+                                <img class="imgCarrito" src="images/productos/storm-trooper.png" alt="Storm Trooper">
+                            </div>
+                            <div class="itemCarrito">
+                                <p class="descripcionItemCarrito">Scottish Storm Trooper</p>
+                                <a class="btnQuitarDelCarrito" href="#">Quitar</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="precioItemCarrito">$10</td>
+                    <td class="cantidadItemCarrito">
+                        <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <aside class="resumen">
+
+        <table class="tablaResumen">
+
+            <thead>
+                <tr>
+                    <th colspan="2">Resumen</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="filaSubtotal">
+                    <td class="subtotal" style="width: 50%;">Subtotal</td>
+                    <td class="valorSubtotal" style="width: 50%;">$10</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr class="filaTotal">
+                    <td class="total" style="width: 50%;">Total</td>
+                    <td class="valorTotal" style="width: 50%;">$10</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="btnComprar" type="button" name="btnComprar" value="Comprar" class="btnComprar" />
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </aside>
+
+    <footer>
+
+        <section class="boletinNovedades">
+
+            <h3>Boletín de Novedades</h3>
+            
+            <form class="formularioBoletinNovedades" action="">
+                <div>
+                    <input class="emailNovedades" type="email" name="emailNovedades" id="emailNovedades" placeholder="suscribite@beervader.com">
+
+                    <div class="divBotonBoletin">
+                        <input class="botonSuscribirBoletinNovedades" type="button" value="Suscribirme!">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="redesSociales">
+
+            <div class="iconosRedesSociales">
+
+                <a class="linkSocial" href="#">
+                    <img class="imgSocialesFooter" src="images/logos/logo-fb.svg" alt="">
+                </a>
+
+                <a class="LinkSocial" href="#">
+                    <img class="imgSocialesFooter" src="images/logos/logo-ig.svg" alt="">
+                </a>
+
+            </div>
+
+            <div class="copyright">
+                <p>©2022 - Beer Vader Brewery Co.</p>
+            </div>
+
+        </section>
+
+        <section class="productosFooter">
+
+            <div class="linkProductos">
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/c3po.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/r2d2.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/chuwbacca.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/han-solo.png" alt="">
+                </a>
+
+                <a class="linkProducto" href="#">
+                    <img class="imgSocialesFooter" src="images/productos/storm-trooper.png" alt="">
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </footer>
+
+    <script src="js/background.js"></script>
 
 </body>
 </html>
