@@ -15,7 +15,7 @@ APP.set('views', VIEWS_DIR);
 // Rutas
 // Landing Page
 APP.get('/', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'checkout.html'));
+	res.sendFile(PATH.join(VIEWS_DIR, 'index.html'));
 });
 
 // Productos

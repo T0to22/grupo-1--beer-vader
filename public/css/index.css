@@ -1,0 +1,10 @@
+.imagenPrincipal {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+.logoPrincipal {
+    max-width: 130px;
+    display: flex;
+    justify-content: center;
+}
