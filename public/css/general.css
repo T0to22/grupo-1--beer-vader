@@ -1,89 +1,42 @@
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 /* GENERALES */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	background: url(/images/background/background-baja.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-family: 'Lato', sans-serif;
-	color: #f1f1f1;
-}
-
-header{
-	position: sticky;
-	top: 0;
-	background-color: rgba(0,0,0,0.5);
-}
-
-/* MENU DE NAVEGACION */
-nav{
-	display: flex;
-	padding: 10px;
-}
-
-.linkLogoNavegacion{
-	display: flex;
-}
-
-.logoNavegacion {
-	max-width: 50px;
-}
-
-.barraNavegacion {
-	display: flex;
-	margin-left: auto !important;
-	align-items: center;
-	margin: 10px;
-	list-style: none;
-}
-
-.barraNavegacion li {
-	margin-right: 10px;
-}
-
-.barraNavegacion li a {
-	text-decoration: none;
-	font-weight: 300;
-	color: #f1f1f1;
-}
-
-.barraNavegacion li a:hover {
-	color: #efb810;
-	font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #f1f1f1;
 }
 
 /* FOOTER */
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
 }
 
-.boletinNovedades{
+.boletinNovedades {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 22vh;
     width: 30%;
     margin: auto;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 20px;
     flex-direction: column;
 }
 
 /* BOLETIN DE NOVEDADES */
-.formularioBoletinNovedades{
+.formularioBoletinNovedades {
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -92,11 +45,11 @@ footer {
     flex-direction: column;
 }
 
-.emailNovedades{
+.emailNovedades {
     width: 100%;
     height: 30px;
     border: 1px solid #f1f1f1;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     color: #f1f1f1;
     font-size: 16px;
@@ -105,72 +58,118 @@ footer {
     text-align: center;
 }
 
-.divBotonBoletin{
+.divBotonBoletin {
     display: flex;
     justify-content: center;
 }
 
-.botonSuscribirBoletinNovedades{
+.botonSuscribirBoletinNovedades {
     font-size: 16px;
-	letter-spacing: 2px;
-	color: #272727;
-	cursor: pointer;
-	border: 3px solid;
-	padding: 0.25em 0.5em;
-	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-	background-color: #efb810;
-	width: 80%;
+    letter-spacing: 2px;
+    color: #272727;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    background-color: #efb810;
+    width: 80%;
     margin-top: 20px;
 }
 
 .botonSuscribirBoletinNovedades:hover {
     background-color: #1465bb;
-	color: #272727;
+    color: #272727;
 }
 
 .botonSuscribirBoletinNovedades:active {
-	box-shadow: 0px 0px 0px 0px;
-	top: 5px;
-	left: 5px;
-	background-color: #f1f1f1;
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+    background-color: #f1f1f1;
 }
 
 /* REDES SOCIALES */
-.redesSociales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 22vh;
-    width: 30%;
+.redesSociales {
+    display: block;
+    text-align: center;
     margin: auto;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 20px;
     flex-direction: column;
 }
 
-.linkSocial{
+.linkSocial {
     position: relative;
     text-decoration: none;
 }
 
-.imgSocialesFooter{
+.imgSocialesFooter {
     max-width: 50px;
     margin: 20px;
 }
 
 /* PRODUCTOS FOOTER */
-.productosFooter{
+.productosFooter {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 22vh;
     width: 30%;
     margin: auto;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 20px;
 }
 
-.linkProducto{
+.linkProductos {
+    text-align: center;
+}
+
+.imgProductoFooter {
+    max-width: 10%;
+    margin: 10px;
+}
+
+.linkProducto {
     text-decoration: none;
     color: #f1f1f1;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+
+    .menuMovil {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .barraNavegacion {
+        display: none;
+    }
+
+    footer {
+        display: block;
+        height: unset;
+        position: relative;
+    }
+
+    .boletinNovedades {
+        display: block;
+        width: 95%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .formularioBoletinNovedades {
+        display: block;
+        margin-top: 20px;
+        width: unset;
+    }
+
+    .redesSociales {
+        display: block;
+        width: 95%;
+        padding-bottom: 40px;
+    }
+
+    .productosFooter {
+        width: 95%;
+    }
 }
