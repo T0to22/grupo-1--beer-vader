@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .imagenPrincipal {
     display: flex;
     justify-content: center;
@@ -8,3 +9,11 @@
     display: flex;
     justify-content: center;
 }
+=======
+/* BACKGROUND */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #f1f1f1;
+    background-color: #272727;
+}
+>>>>>>> origin/Toto
