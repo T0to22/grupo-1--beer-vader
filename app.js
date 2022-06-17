@@ -43,9 +43,15 @@ APP.get('/checkout', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'checkout.html'));
 });
 
+<<<<<<< HEAD
 // Pagina de Error
 APP.get('*', (req, res) => {
     res.sendFile(PATH.join(VIEWS_DIR, 'error.html'));
+=======
+//Pagina de Error
+APP.get('/inicio', (req, res) => {
+    res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
+>>>>>>> origin/Toto
 }
 );
 

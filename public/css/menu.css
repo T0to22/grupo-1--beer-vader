@@ -103,12 +103,18 @@ nav {
 
 @media screen and (max-width: 768px) {
 
-    .barraNavegacion {
-        display: none;
+    header {
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     .menuMovil {
         display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .barraNavegacion {
+        display: none;
     }
 
 }
