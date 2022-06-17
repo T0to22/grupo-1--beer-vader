@@ -1,24 +1,10 @@
-<<<<<<< HEAD
-.imagenPrincipal {
-    display: flex;
-    justify-content: center;
-    height: 30vh;
-}
-.logoPrincipal {
-    max-width: 130px;
-    display: flex;
-    justify-content: center;
-}
-=======
 /* BACKGROUND */
 body {
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
     background-color: #272727;
 }
-<<<<<<< HEAD
->>>>>>> origin/Toto
-=======
+
 
 .visualPrimaria {
     display: flex;
@@ -60,4 +46,16 @@ body {
     max-width: 7%;
     margin: 30px 50px 0 50px;
 }
->>>>>>> origin/Toto
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px)  {
+.imagenPrincipal {
+
+
+}
+
+.productos{
+
+}
+
+}
