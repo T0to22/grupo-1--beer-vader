@@ -1,47 +1,84 @@
 /* BACKGROUND */
 body {
+    background: url(/images/backgrounds/index.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
-    background-color: #272727;
 }
 
-.visualPrimaria {
-    display: flex;
-    height: 80vh;
+footer{
+    position: relative;
+}
+
+/* MAIN */
+.visualPrimaria{
+    display: block;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.contenedorImagen{
+/* LOGO PRINCIPAL */
+.logoPrincipal {
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.contenedorLogoPrincipal{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.logoBeerVaderPrincipal{
+    width: 30%;
+}
+
+/* FILA DE PRODUCTOS */
+.productosPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;; 
+    width: 100%;
+}
+
+.linksProductosPrincipal {
     text-align: center;
 }
 
-.logoPrincipal{
-    width: 80%;
+.imgProductoPrincipal {
+    max-width: 15%;
+    margin: 10px;
 }
 
-.imagenPrincipal {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.productos {
-    display: flex;
-    justify-content: center;
-}
-
-.listaDeProductos {
+.linkProductoPrincipal {
     text-align: center;
-}
-
-.itemProducto {
     text-decoration: none;
     color: #f1f1f1;
 }
 
-.imgProducto {
-    max-width: 7%;
-    margin: 30px 50px 0 50px;
+  
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    
+	.visualPrimaria{
+		display: block;
+		height: auto;
+	}
+
+	.logoPrincipal {
+		display: flex;
+        justify-content: center;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.productosPrincipal {
+		display: flex;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }

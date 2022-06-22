@@ -1,10 +1,64 @@
-/* BACKGROUND */
-body {
-    background: url(/images/backgrounds/login.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: 'Lato', sans-serif;
+/* FUENTES /
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap%27);
+
+
+/ GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin-left: 25px;
+}
+
+.logo{
+    text-align: right;
+    margin-right: 140px;
+}
+
+.logo img{
+    width: 35%;
+}
+
+.formulario{
+    margin-right: 60vh;
+    height: 300px;
     color: #f1f1f1;
+    margin-left: 20px;
+
+}
+
+.form{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 20px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.form input{
+    display: block;
+}
+
+h5{
+    text-align: center;
+}
+
+.contenedorCheckbox{
+    display: inline;
+}
+
+@media screen and (max-width: 768px){
+    .logo img {
+        display: none;
+    }
+
+    .formulario {
+        display: none;
+    }
+    .form {
+        display: none;
+    }
 }

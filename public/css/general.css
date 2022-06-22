@@ -19,10 +19,10 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 22vh; */
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
+    padding-top: 10px;
 }
 
 /* BOLETIN DE NOVEDADES */
@@ -30,7 +30,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 22vh; */
     width: 30%;
     margin: auto;
     flex-direction: column;
@@ -136,7 +135,6 @@ footer {
 
     footer {
         display: block;
-        height: unset;
         position: relative;
     }
 
