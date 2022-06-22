@@ -125,6 +125,7 @@ footer {
     background-color: #efb810;
     width: 80%;
     text-decoration: none;
+    text-align: center;
 }
 
 .addToCard:hover {
