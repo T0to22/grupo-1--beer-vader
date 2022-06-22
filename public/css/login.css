@@ -21,8 +21,9 @@ body {
 
 .visualPrimaria {
     display: grid;
+    width: 90%;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
-    height: 60vh;
     align-items: center;
 }
 
@@ -60,13 +61,13 @@ input {
     padding-left: 20px;
 }
 
-.recordatorio {
+.recordatorio{
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
     width: 100%;
     display: flex;
-    margin-right: 55px;
-
+    margin-right: 28px;
+    
 }
 
 .contenedorCheck {
@@ -81,6 +82,7 @@ input {
     margin-right: -30px;
 }
 
+<<<<<<< HEAD
 .recuperar {
     color: azure;
 }
@@ -104,6 +106,43 @@ p {
     height: 300px;
     color: #f1f1f1;
     margin-left: 20px;
+=======
+.recuperar{
+    width: 100%;
+    margin-left: 5px;
+}
+
+.recuperar-link{
+    color: #f1f1f1;
+}
+
+p{
+    /* margin-left: 18px; */
+    
+}
+
+.logo{
+   
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 210px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.logo img{	
+	width: 130%;
+}
+
+.formulario{
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 15px;
+>>>>>>> origin/Gonza
 }
 
 .form {
