@@ -14,9 +14,9 @@
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/login.css">
 
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="background" data-src="images/backgrounds/login.jpg">
@@ -50,24 +50,24 @@
 				<img src="/images/logos/logo.png" alt="Logo">
 			</div>
 			<div class="formulario">
-				
-				<form class= "form" action="" method="post">
-					
-					<h5>Iniciar Sesión</h5>
 
-					<label class="etiquetas" for="email"></label>
-					<input type="email" name="email" id="email" placeholder="Email">
+				<form class="form" action="" method="post">
 
-					<label class="etiquetas" for="password"></label>
-					<input type="password" name="password" id="password" placeholder="Password">
-					
-					<div class="contenedorCheckbox">
-						<label class="recordatorio" > Recordarme</label>
-						<input type="checkbox" name="recordarme" id="recordarme">
-					</div>
+					<h4>Iniciar Sesión</h4>
+
+					<label for="email">
+					<input class="etiquetas" type="email" name="email" id="email" placeholder="Email"></label>
+
+					<label  for="password">
+					<input class="etiquetas"type="password" name="password" id="password" placeholder="Password"></label>
+
+					<div class="contenedorCheck">
+					<label class="recordatorio"> Recordarme</label>
+					<input class="botonCheck" type="checkbox" name="recordarme" id="recordarme">
+					</div>	
 
 					<input class="boton" type="submit" name="iniciarSesion" value="Iniciar Sesión">
-					<p class="recuperar"><a href="#">Recuperar Mi Contraseña</a></p>
+					<p ><a class="recuperar" href="#">¿ Olvidaste tu contraseña ?</a></p>
 				</form>
 			</div>
 			<!-- </div> -->
