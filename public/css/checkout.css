@@ -1,12 +1,20 @@
 /* BACKGROUND */
 body {
     background: url(/images/backgrounds/checkout.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
+    animation: efectoFadeIn 5s;
+}
+
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* MAIN */

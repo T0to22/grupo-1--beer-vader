@@ -1,12 +1,20 @@
 /* BACKGROUND */
 body {
     background: url(/images/backgrounds/index.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
+    animation: efectoFadeIn 2s;
+}
+
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 footer{
@@ -23,7 +31,6 @@ footer{
 .logoPrincipal {
     text-align: center;
     padding: 30px;
-    
 }
 
 .contenedorLogoPrincipal{
@@ -38,17 +45,13 @@ footer{
 
 /* FILA DE PRODUCTOS */
 .productosPrincipal {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;; 
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
-.linksProductosPrincipal {
-    text-align: center;
-}
-
 .imgProductoPrincipal {
-    max-width: 15%;
+    max-width: 25%;
     margin: 10px;
 }
 
@@ -58,6 +61,32 @@ footer{
     color: #f1f1f1;
 }
 
+.grupoLatas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 90%;
+}
+
+.linkProductoPrincipal {
+    text-align: center;
+    position: relative;
+}
+
+.imgProductoPrincipal {
+    transition: all 200ms ease-in;
+}
+
+.imgProductoPrincipal:hover {
+    transition: all 200ms ease-in;
+    animation: moverLata 2s;
+}
+
+@keyframes moverLata {
+    50% {
+        transform: rotate(360deg);
+    }
+}
   
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {

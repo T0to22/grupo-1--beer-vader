@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="background" data-src="images/backgrounds/checkout.jpg">
+<body>
 
     <header>
         <nav>
@@ -21,19 +21,30 @@
                 <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader">
             </a>
 
+            <input type="checkbox" id="botonMenuMovil">
+            <label for="botonMenuMovil" id="fontAwsomeBoton"><i class="fa-solid fa-bars fa-2x"
+                    id="textoBotonMenuMovil"></i></label>
+
             <ul class="barraNavegacion">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/productos">Nuestras Cervezas</a></li>
-                <li><a href="/login">Iniciar Sesión</a></li>
-                <li><a href="/registro">Registrarse</a></li>
-                <li><a href="/checkout">Carrito de Compras</a></li>
+                <li>
+                    <a href="/"><i class="fa-solid fa-house"></i> Inicio</a>
+                </li>
+                <li>
+                    <a href="/productos"><i class="fa-solid fa-beer-mug-empty"></i> Nuestras Cervezas</a>
+                </li>
+                <li>
+                    <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="/registro"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+                </li>
+                <li>
+                    <a href="/checkout"><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras</a>
+                </li>
             </ul>
 
-            <div class="menuMovil">
-                <button id="botonMenuMovil"><i class="fa-solid fa-bars fa-2x" id="textoBotonMenuMovil"></i></button>
-            </div>
-
         </nav>
+
     </header>
 
     <main class="visualPrimaria">
@@ -48,7 +59,7 @@
 
         <section class="productosPrincipal">
 
-            <!-- <div class="linksProductosPrincipal"> -->
+            <div class="grupoLatas">
 
                 <a class="linkProductoPrincipal" href="#">
                     <img class="imgProductoPrincipal" src="images/productos/c3po.png" alt="">
@@ -70,7 +81,7 @@
                     <img class="imgProductoPrincipal" src="images/productos/storm-trooper.png" alt="">
                 </a>
 
-            <!-- </div> -->
+            </div>
 
         </section>
 
@@ -145,8 +156,6 @@
 
 
     </footer>
-
-    <!-- <script src="js/background.js"></script> -->
 
 </body>
 </html>
