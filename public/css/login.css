@@ -22,8 +22,9 @@ body {
 
 .visualPrimaria{
     display: grid;
+    width: 90%;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
-    height: 60vh;
     align-items: center;
 }
 
@@ -66,11 +67,11 @@ input{
 }
 
 .recordatorio{
-    font-family:'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #f1f1f1;
     width: 100%;
-    display:flex;
-    margin-right: 55px;
+    display: flex;
+    margin-right: 28px;
     
 }
 
@@ -87,28 +88,40 @@ input{
 }
 
 .recuperar{
-    color: azure;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.recuperar-link{
+    color: #f1f1f1;
 }
 
 p{
-    margin-left: 18px;
+    /* margin-left: 18px; */
     
 }
 
 .logo{
-    text-align: right;
-    margin-right: 160px;
+   
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 210px;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 .logo img{	
-	width: 35%;
+	width: 130%;
 }
 
 .formulario{
-    margin-right: 60vh;
-    height: 300px;
-    color: #f1f1f1;
-    margin-left: 20px;
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 15px;
 }
 
 .form{
