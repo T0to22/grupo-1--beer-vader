@@ -10,16 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/menu.css">
-
     <link rel="stylesheet" href="css/addtocart.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
-<body class="background" data-src="images/backgrounds/registro.jpg">
+<body class="background" data-src="images/backgrounds/checkout.jpg">
 
     <header>
         <nav>
@@ -27,19 +21,29 @@
                 <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader">
             </a>
 
+            <input type="checkbox" id="botonMenuMovil">
+            <label for="botonMenuMovil" id="fontAwsomeBoton" ><i class="fa-solid fa-bars fa-2x" id="textoBotonMenuMovil"></i></label>
+
             <ul class="barraNavegacion">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/productos">Nuestras Cervezas</a></li>
-                <li><a href="/login">Iniciar Sesión</a></li>
-                <li><a href="/registro">Registrarse</a></li>
-                <li><a href="/checkout">Carrito de Compras</a></li>
+                <li>
+                    <a href="/"><i class="fa-solid fa-house"></i> Inicio</a>
+                </li>
+                <li>
+                    <a href="/productos"><i class="fa-solid fa-beer-mug-empty"></i> Nuestras Cervezas</a>
+                </li>
+                <li>
+                    <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="/registro"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+                </li>
+                <li>
+                    <a href="/checkout"><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras</a>
+                </li>
             </ul>
 
-            <div class="menuMovil">
-                <button id="botonMenuMovil"><i class="fa-solid fa-bars fa-2x" id="textoBotonMenuMovil"></i></button>
-            </div>
-
         </nav>
+
     </header>
 
     <main class="contenedor">
@@ -75,7 +79,8 @@
                 </select>
             </div>
 
-            <input id="btnComprar" type="button" name="btnComprar" value="Comprar" class="btnComprar" />
+            <!-- <input id="btnComprar" type="button" name="btnComprar" value="Comprar" class="btnComprar" /> -->
+            <a class="btnComprar" href="/checkout">Comprar</a>
 
         </section>
 

@@ -2,7 +2,7 @@
 const EXPRESS = require('express');
 const APP = EXPRESS();
 const PATH = require('path');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 //Carpeta Publica
 const PUBLIC_DIR = PATH.join(__dirname, 'public');
