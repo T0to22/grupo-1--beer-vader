@@ -47,40 +47,31 @@
 
 	</header>
 
-	<main class="visualPrimaria">
+	<main>
 
-		<section class="login">
+		<div class="logoYBox">
+			<section class="logo">
+				<img src="images/logos/logo.png" alt="logo" />
+			</section>
 
-			<div class="logo">
-				<img src="/images/logos/logo.png" alt="Logo">
-			</div>
-			<div class="formulario">
 
-				<form class="form" action="" method="post">
+			<form action="submit" method="post">
 
-					<h4>Iniciar Sesión</h4>
+				<h1 class="tituloLogin">Iniciar Sesion</h1>
 
-					<label for="email">
-						<input class="etiquetas" type="email" name="email" id="email" placeholder="Email"></label>
+				<label for="email">
+					<input class="inputEntradaLogin" type="email" name="email" id="email" placeholder="tumail@beervader.com" autocomplete="off" require />
+				</label>
 
-					<label for="password">
-						<input class="etiquetas" type="password" name="password" id="password"
-							placeholder="Password"></label>
+				<label for="password">
+					<input class="inputEntradaLogin" type="password" name="password" id="password" placeholder="Ingresá tu Contraseña" autocomplete="off" require />
+				</label>
 
-					<div class="contenedorCheck">
-						<label class="recordatorio"> Recordarme</label>
-						<input class="botonCheck" type="checkbox" name="recordarme" id="recordarme">
-					</div>
+				<button class="btnLogin" type="submit">Iniciar Sesion</button>
+			</form>
 
-					<input class="boton" type="submit" name="iniciarSesion" value="Iniciar Sesión">
-					<p class="recuperar" >
-						<a  class="recuperar-link" href="#">¿ Olvidaste tu contraseña ?</a>
-					</p>
-				</form>
-			</div>
 
-		</section>
-
+		</div>
 	</main>
 
     <footer>

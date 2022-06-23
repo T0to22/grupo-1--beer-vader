@@ -1,262 +1,187 @@
-/* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-
-/* GENERALES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* BACKGROUND */
 body {
     background: url(/images/backgrounds/login.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
+    animation: efectoFadeIn 2s;
 }
 
-.visualPrimaria {
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+
     align-items: center;
 }
 
-.login {
-    display: contents;
+.tituloLogin {
+    display: flex;
     justify-content: center;
-    height: 300px;
+    padding: 5px;
 }
 
-h4 {
-    font-family: 'Lato', sans-serif;
-    color: #f1f1f1;
-    text-align: center;
-    margin-right: 15px;
-}
-
-input {
-    font-family: 'Lato', sans-serif;
-    color: #272727;
-    width: 80%;
-    margin: 20px;
+.menuMovil {
     display: flex;
 }
 
-.etiquetas {
-    padding: 7px 7px;
-    border-radius: 5px;
+.barraNavegacion {
+    display: none;
 }
 
-.boton {
-    font-family: 'Lato', sans-serif;
-    color: #272727;
-    width: 50%;
-    margin-left: 50px;
-    padding-left: 20px;
-}
-
-.recordatorio{
-    font-family: 'Lato', sans-serif;
-    color: #f1f1f1;
-    width: 100%;
-    display: flex;
-    margin-right: 28px;
-    
-}
-
-.contenedorCheck {
+.logoYBox {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    margin-bottom: -15px;
-    margin-top: -15px;
-}
-
-.botonCheck {
-    margin-right: -30px;
-}
-
-<<<<<<< HEAD
-.recuperar {
-    color: azure;
-}
-
-p {
-    margin-left: 18px;
-
+    height: 70vh;
 }
 
 .logo {
-    text-align: right;
-    margin-right: 160px;
-}
-
-.logo img {
-    width: 35%;
-}
-
-.formulario {
-    margin-right: 60vh;
-    height: 300px;
-    color: #f1f1f1;
-    margin-left: 20px;
-=======
-.recuperar{
-    width: 100%;
-    margin-left: 5px;
-}
-
-.recuperar-link{
-    color: #f1f1f1;
-}
-
-p{
-    /* margin-left: 18px; */
-    
-}
-
-.logo{
-   
-    display: grid;
-    width: 50%;
-    margin: 0 auto;
-    margin-left: 210px;
-    grid-template-columns: 1fr 1fr;
+    display: none;
 
 }
 
-.logo img{	
-	width: 130%;
-}
-
-.formulario{
-    display: grid;
-    width: 50%;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin-left: 15px;
->>>>>>> origin/Gonza
-}
-
-.form {
+form {
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.inputEntradaLogin {
     display: block;
-    padding: 20px;
-    height: 95%;
-    border-radius: 20px;
-    background: border-box;
-}
-
-.form input {
-    display: inline-flex;
-    justify-content: center;
-    padding-right: 20px;
-}
-
-h5 {
+    width: 90%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin: 10px auto;
     text-align: center;
 }
 
+.btnLogin {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #272727;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    background-color: #efb810;
+    width: 80%;
+    margin: 0 auto 20px;
+}
 
-@media screen and (max-width: 768px) {
+.btnLogin:hover {
+	background-color: #1465bb;
+	color: #272727;
+}
 
-    footer {
-        display: block;
-        height: unset;
-        position: relative;
-    }
+.btnLogin:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+	background-color: #f1f1f1;
+}
 
-    .boletinNovedades {
-        width: 95%;
-        height: auto;
-        padding-top: 20px;
-    }
+@media (min-width:769px) {
 
-    .formularioBoletinNovedades {
-        display: block;
-        width: 95%;
-    }
-
-    .redesSociales {
-        display: flex;
-        width: 95%;
-        padding-bottom: 40px;
-    }
-
-    .productosFooter {
-        width: 95%;
-        height: auto;
-    }
-
-    .logo img {
+    .menuMovil {
         display: none;
     }
 
-    .formulario {
-        margin: 0 auto;
+    .barraNavegacion {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0%;
-        height: max-content;
-        text-align: center;
     }
 
-    .input {
-        padding: 15px 15px;
-    }
-
-    .contenedorCheck {
-        margin-right: 100px;
-    }
-
-    .botonCheck {
-        text-align: center;
-        width: 100%;
-        margin-left: 110px;
-    }
-
-    .recordatorio {
-        margin-left: 0px;
-    }
-
-    .boton {
-        text-align: center;
-        margin-right: 60px;
-        padding: 15px 15px;
-    }
-
-    .recuperar {
-        margin-right: 50px;
-    }
-
-    .visualPrimaria {
-        display: block;
-        height: auto;
-    }
-
-    .logoPrincipal {
+    .logo {
         display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 50%;
+        margin-right: 5vw;
+        justify-content: right;
     }
 
-    .productosPrincipal {
-        display: flex;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .logo img {
+        width: 60%;
+        padding: 30px;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 10px;
+    }
+
+    form {
+        margin-left: 8vw;
+        margin-right: 8vw;
+        width: 50%;
     }
 
 }
+
+/* 
+.logoYBox {
+    display:flex;
+    align-items:center;
+    margin: 20% 20%;
+}
+
+.logo {
+    display:none;
+    }
+
+form {
+    background-color: rgba(39, 39, 39, 0.2);
+    padding:20px;
+    flex-wrap: wrap;
+    width:50%;
+    height:50%;
+    margin:auto;
+    border-radius: 15%;
+    border:solid rgba(239, 184, 16, 0.4);
+}
+
+input {
+    display:block;
+    justify-content:center;
+    width:100%;
+    margin-top:10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+@media (min-width:769px){
+
+    /* main {
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:repeat(1,1fr);
+        grid-gap:4px;
+        height:70vh;
+        } */
+
+/* .logo {
+            background-color: rgba(39, 39, 39, 0.2);
+            width:50%;
+            height: 100%;
+            display:block;
+            margin-right:3vw;
+            border-radius: 5%;
+            border:rgba(239, 184, 16, 0.4);
+            }
+            
+            .logo img{
+            width: 100%;
+            
+            
+            }} */
