@@ -23,6 +23,6 @@
   "homepage": "https://github.com/T0to22/grupo-1--beer-vader#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.18"
   }
 }
