@@ -103,6 +103,11 @@ body {
     margin-bottom: 3%;
 }
 
+#popupBody p{
+    text-align: justify;
+    margin: 15px;
+}
+
 #popupBody ul{
     display: block;
     text-align: center;
