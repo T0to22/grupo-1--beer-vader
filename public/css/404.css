@@ -1,0 +1,41 @@
+/* BACKGROUND */
+body {
+    background: url(/images/backgrounds/404.jpg) no-repeat center center fixed;
+    background-size: cover;
+    animation: efectoFadeIn 5s;
+}
+
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer{
+    bottom: 0;
+}
+
+/* MAIN */
+.visualPrimaria{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: flex-end;
+}
+
+.tituloError{
+    font-size: 48px;
+}
+
+.leyendaError{
+    margin-bottom: 30px;
+}
+
+.fraseError{
+    font-weight: 300;
+}

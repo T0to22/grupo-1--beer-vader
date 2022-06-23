@@ -44,8 +44,8 @@ APP.get('/checkout', (req, res) => {
 });
 
 //Pagina de Error
-APP.get('/inicio', (req, res) => {
-    res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
+APP.get('*', (req, res) => {
+    res.sendFile(PATH.join(VIEWS_DIR, '404.html'));
 }
 );
 
