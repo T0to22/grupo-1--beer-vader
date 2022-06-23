@@ -2,9 +2,7 @@
 body {
     background: url(/images/backgrounds/checkout.jpg) no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Lato', sans-serif;
-    color: #f1f1f1;
-    animation: efectoFadeIn 5s;
+    animation: efectoFadeIn 2s;
 }
 
 @keyframes efectoFadeIn {
@@ -141,7 +139,6 @@ body {
 	.checkout {
 		display: flex;
 		width: 100%;
-		/* height: unset; */
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -149,7 +146,6 @@ body {
 	.resumen {
 		display: flex;
 		width: 100%;
-		/* height: unset; */
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
