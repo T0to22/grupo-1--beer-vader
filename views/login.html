@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Beer Vader Brewery Co.</title>
-	<link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Vader Brewery Co.</title>
+    <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-	<link rel="stylesheet" href="css/general.css">
-	<link rel="stylesheet" href="css/menu.css">
-	<link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
     <header>
         <nav>
-            <a class="linkLogoNavegacion" href="/">
+            <a class="linkLogoNavegacion" href="/inicio">
                 <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader" />
             </a>
 
@@ -27,7 +27,7 @@
 
             <ul class="barraNavegacion">
                 <li>
-                    <a href="/"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <a href="/inicio"><i class="fa-solid fa-house"></i> Inicio</a>
                 </li>
                 <li>
                     <a href="/productos"><i class="fa-solid fa-award"></i> Nuestras Cervezas</a>
@@ -67,7 +67,11 @@
 					<input class="inputEntradaLogin" type="password" name="password" id="password" placeholder="Ingresá tu Contraseña" autocomplete="off" require />
 				</label>
 
+                <label id="checkRecordarme"><input type="checkbox" id="recordame" value="1"> Recordarme</label>
+
 				<button class="btnLogin" type="submit">Iniciar Sesion</button>
+
+                <a class="recuperarPwd" href="#">Recuperar Mi Contraseña</a>
 			</form>
 
 

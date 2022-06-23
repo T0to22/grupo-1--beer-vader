@@ -89,53 +89,6 @@ body {
     text-align: center;
 }
 
-/* @media(max-width:380) {
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        width: 100%;
-        padding-right: 50px;
-
-    }
-
-    .contenedor {
-        display: grid;
-        width: 50px;
-        padding-right: 70%;
-        height: 100%;
-    }
-
-    .columnaIzquierda {
-        padding-right: 150px;
-        margin-bottom: 60%;
-        height: 60%;
-    }
-
-    .titulos {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-left: -150px;
-    }
-
-    .columnaDerecha {
-        margin: auto;
-        font-size: 12px;
-    }
-
-    .titulos {
-
-        font-size: 12px;
-    }
-
-    .descripcionProducto {
-        font-size: 12px;
-    }
-} */
-
 @media screen and (max-width: 768px) {
 
     .contenedor{
