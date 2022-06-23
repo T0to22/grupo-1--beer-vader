@@ -8,3 +8,162 @@ body {
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
 }
+
+main {
+    
+    align-items: center;
+}
+
+.tituloRegistro {
+    display:flex;
+    justify-content: center;
+    padding:5px;
+}
+
+
+
+.menuMovil {
+    display:flex;
+}
+
+.barraNavegacion {
+    display: none;
+}
+
+.logoYBox {
+display:flex;
+align-items:center;
+height: 100%;
+}
+
+.logo{
+display:none;
+
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width:50%;
+    margin:auto;
+}
+
+input, button {
+    display:block;
+    padding:2px;
+    margin:auto;
+    margin-top:6px;
+    border-radius: 5px;
+    text-align: center;
+    color:#272727;
+    border:solid #272727;
+}
+
+input {
+    background-color: rgba(0,0,0,0.5);
+    color:#f1f1f1;
+    border: 1px solid #f1f1f1;
+    width:60%;
+}
+
+button {
+    background-color: #efb810;
+    width:40%;
+}
+
+@media (min-width:769px){
+
+    .menuMovil {
+        display:none;
+    }
+
+    /* main {
+        height:80vh;
+    } */
+
+    .tituloRegistro {
+display:none;
+    }
+
+    .barraNavegacion {
+        display: flex;
+    }
+.logo {
+    display:flex;
+    width:50%;
+    margin-right: 5vw;
+    justify-content: right;
+}
+
+.logo img {
+    width:50%;
+    padding:2px; 
+}
+
+form {
+    margin-left: 8vw;
+    margin-right:8vw;
+}
+
+}
+/* 
+.logoYBox {
+    display:flex;
+    align-items:center;
+    margin: 20% 20%;
+}
+
+.logo {
+    display:none;
+    }
+
+form {
+    background-color: rgba(39, 39, 39, 0.2);
+    padding:20px;
+    flex-wrap: wrap;
+    width:50%;
+    height:50%;
+    margin:auto;
+    border-radius: 15%;
+    border:solid rgba(239, 184, 16, 0.4);
+}
+
+input {
+    display:block;
+    justify-content:center;
+    width:100%;
+    margin-top:10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+@media (min-width:769px){
+
+    /* main {
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:repeat(1,1fr);
+        grid-gap:4px;
+        height:70vh;
+        } */
+
+        /* .logo {
+            background-color: rgba(39, 39, 39, 0.2);
+            width:50%;
+            height: 100%;
+            display:block;
+            margin-right:3vw;
+            border-radius: 5%;
+            border:rgba(239, 184, 16, 0.4);
+            }
+            
+            .logo img{
+            width: 100%;
+            
+            
+            }} */
+   
