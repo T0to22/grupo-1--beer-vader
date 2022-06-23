@@ -121,6 +121,10 @@ body {
 
 @media (max-width:768px) {
 
+    .divPregunta{
+        width: 80%;
+    }
+
     #popupBody {
         width: 90%;
         margin: 40% auto;
