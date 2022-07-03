@@ -15,7 +15,11 @@ APP.set('views', VIEWS_DIR);
 //Rutas
 //Landing Page
 APP.get('/', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'index.html'));
+	res.sendFile(PATH.join(VIEWS_DIR, 'landing.html'));
+});
+
+APP.get('/inicio', (req, res) => {
+	res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
 });
 
 //Productos
@@ -44,8 +48,8 @@ APP.get('/checkout', (req, res) => {
 });
 
 //Pagina de Error
-APP.get('/inicio', (req, res) => {
-    res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
+APP.get('*', (req, res) => {
+    res.sendFile(PATH.join(VIEWS_DIR, '404.html'));
 }
 );
 

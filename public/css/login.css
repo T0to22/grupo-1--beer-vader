@@ -1,22 +1,68 @@
-/* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-
-/* GENERALES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* BACKGROUND */
 body {
     background: url(/images/backgrounds/login.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    font-family: 'Lato', sans-serif;
+    animation: efectoFadeIn 2s;
+}
+
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+
+    align-items: center;
+}
+
+.tituloLogin {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.menuMovil {
+    display: flex;
+}
+
+.barraNavegacion {
+    display: none;
+}
+
+.logoYBox {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.logo {
+    display: none;
+
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.inputEntradaLogin {
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
     color: #f1f1f1;
+    <<<<<<< HEAD
 }
 
 .visualPrimaria {
@@ -61,13 +107,13 @@ input {
     padding-left: 20px;
 }
 
-.recordatorio{
+.recordatorio {
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
     width: 100%;
     display: flex;
     margin-right: 28px;
-    
+
 }
 
 .contenedorCheck {
@@ -82,8 +128,7 @@ input {
     margin-right: -30px;
 }
 
-<<<<<<< HEAD
-.recuperar {
+<<<<<<< HEAD .recuperar {
     color: azure;
 }
 
@@ -106,157 +151,233 @@ p {
     height: 300px;
     color: #f1f1f1;
     margin-left: 20px;
-=======
-.recuperar{
-    width: 100%;
-    margin-left: 5px;
-}
 
-.recuperar-link{
-    color: #f1f1f1;
-}
-
-p{
-    /* margin-left: 18px; */
-    
-}
-
-.logo{
-   
-    display: grid;
-    width: 50%;
-    margin: 0 auto;
-    margin-left: 210px;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.logo img{	
-	width: 130%;
-}
-
-.formulario{
-    display: grid;
-    width: 50%;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin-left: 15px;
->>>>>>> origin/Gonza
-}
-
-.form {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: block;
-    padding: 20px;
-    height: 95%;
-    border-radius: 20px;
-    background: border-box;
-}
-
-.form input {
-    display: inline-flex;
-    justify-content: center;
-    padding-right: 20px;
-}
-
-h5 {
-    text-align: center;
-}
-
-
-@media screen and (max-width: 768px) {
-
-    footer {
-        display: block;
-        height: unset;
-        position: relative;
+    =======.recuperar {
+        width: 100%;
+        margin-left: 5px;
     }
 
-    .boletinNovedades {
-        width: 95%;
-        height: auto;
-        padding-top: 20px;
+    .recuperar-link {
+        color: #f1f1f1;
     }
 
-    .formularioBoletinNovedades {
-        display: block;
-        width: 95%;
+    p {
+        /* margin-left: 18px; */
+
     }
 
-    .redesSociales {
-        display: flex;
-        width: 95%;
-        padding-bottom: 40px;
-    }
+    .logo {
 
-    .productosFooter {
-        width: 95%;
-        height: auto;
+        display: grid;
+        width: 50%;
+        margin: 0 auto;
+        margin-left: 210px;
+        grid-template-columns: 1fr 1fr;
+
     }
 
     .logo img {
-        display: none;
+        width: 130%;
     }
 
     .formulario {
+        display: grid;
+        width: 50%;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-        width: 100%;
-        padding: 0%;
-        height: max-content;
-        text-align: center;
+        margin-left: 15px;
+        >>>>>>>origin/Gonza
     }
 
-    .input {
-        padding: 15px 15px;
-    }
-
-    .contenedorCheck {
-        margin-right: 100px;
-    }
-
-    .botonCheck {
-        text-align: center;
-        width: 100%;
-        margin-left: 110px;
-    }
-
-    .recordatorio {
-        margin-left: 0px;
-    }
-
-    .boton {
-        text-align: center;
-        margin-right: 60px;
-        padding: 15px 15px;
-    }
-
-    .recuperar {
-        margin-right: 50px;
-    }
-
-    .visualPrimaria {
+    .form {
+        background-color: rgba(0, 0, 0, 0.5);
         display: block;
-        height: auto;
+        padding: 20px;
+        height: 95%;
+        border-radius: 20px;
+        background: border-box;
     }
 
-    .logoPrincipal {
-        display: flex;
+    .form input {
+        display: inline-flex;
         justify-content: center;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding-right: 20px;
     }
 
-    .productosPrincipal {
-        display: flex;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    h5 {
+        text-align: center;
     }
 
-}
+
+    @media screen and (max-width: 768px) {
+
+        footer {
+            display: block;
+            height: unset;
+            position: relative;
+        }
+
+        .boletinNovedades {
+            width: 95%;
+            height: auto;
+            padding-top: 20px;
+        }
+
+        .formularioBoletinNovedades {
+            display: block;
+            width: 95%;
+        }
+
+        .redesSociales {
+            display: flex;
+            width: 95%;
+            padding-bottom: 40px;
+        }
+
+        .productosFooter {
+            width: 95%;
+            height: auto;
+        }
+
+        .logo img {
+            display: none;
+        }
+
+        .formulario {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0%;
+            height: max-content;
+            text-align: center;
+        }
+
+        .input {
+            padding: 15px 15px;
+        }
+
+        .contenedorCheck {
+            margin-right: 100px;
+        }
+
+        .botonCheck {
+            text-align: center;
+            width: 100%;
+            margin-left: 110px;
+        }
+
+        .recordatorio {
+            margin-left: 0px;
+        }
+
+        .boton {
+            text-align: center;
+            margin-right: 60px;
+            padding: 15px 15px;
+        }
+
+        .recuperar {
+            margin-right: 50px;
+        }
+
+        .visualPrimaria {
+            display: block;
+            height: auto;
+        }
+
+        .logoPrincipal {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .productosPrincipal {
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        #checkRecordarme {
+            display: block;
+            text-align: center;
+            margin: 10px;
+            font-weight: 300;
+        }
+
+        .btnLogin {
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #272727;
+            cursor: pointer;
+            border: 3px solid;
+            padding: 0.25em 0.5em;
+            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+            background-color: #efb810;
+            width: 80%;
+            margin: 0 auto 20px;
+        }
+
+        .btnLogin:hover {
+            background-color: #1465bb;
+            color: #272727;
+        }
+
+        .btnLogin:active {
+            box-shadow: 0px 0px 0px 0px;
+            top: 5px;
+            left: 5px;
+            background-color: #f1f1f1;
+        }
+
+        .recuperarPwd {
+            display: block;
+            text-align: center;
+            color: #f1f1f1;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        @media (min-width:769px) {
+
+            .menuMovil {
+                display: none;
+            }
+
+            .barraNavegacion {
+                display: flex;
+            }
+
+            .logo {
+                display: flex;
+                width: 50%;
+                margin-right: 5vw;
+                justify-content: right;
+            }
+
+            .logo img {
+                width: 60%;
+                padding: 30px;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+
+            form {
+                margin-left: 8vw;
+                margin-right: 8vw;
+                width: 50%;
+                >>>>>>>origin/produccion
+            }
+
+        }

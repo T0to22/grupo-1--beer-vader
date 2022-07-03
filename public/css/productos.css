@@ -2,8 +2,6 @@
 body {
     background: url(/images/backgrounds/productos.jpg) no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Lato', sans-serif;
-    color: #f1f1f1;
     animation: efectoFadeIn 2s;
 }
 
@@ -174,7 +172,7 @@ footer {
     .contenedorImagenProductoDerecha {
         display: block;
         text-align: center;
-        order:1;
+        order: 1;
     }
 
     .descripcionProductoIzquierda {
@@ -187,7 +185,7 @@ footer {
         display: flex;
         width: 95%;
         margin: auto;
-        order:2;
+        order: 2;
     }
 
     .footerDescripcionProducto {
