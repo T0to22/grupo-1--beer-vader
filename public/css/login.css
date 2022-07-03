@@ -62,7 +62,6 @@ form {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     color: #f1f1f1;
-    <<<<<<< HEAD
 }
 
 .visualPrimaria {
@@ -128,7 +127,7 @@ input {
     margin-right: -30px;
 }
 
-<<<<<<< HEAD .recuperar {
+.recuperar {
     color: azure;
 }
 
@@ -151,233 +150,229 @@ p {
     height: 300px;
     color: #f1f1f1;
     margin-left: 20px;
+}
 
-    =======.recuperar {
-        width: 100%;
-        margin-left: 5px;
+.recuperar {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.recuperar-link {
+    color: #f1f1f1;
+}
+
+.logo {
+
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 210px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.logo img {
+    width: 130%;
+}
+
+.formulario {
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 20px;
+    height: 95%;
+    border-radius: 20px;
+    background: border-box;
+}
+
+.form input {
+    display: inline-flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+h5 {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        display: block;
+        height: unset;
+        position: relative;
     }
 
-    .recuperar-link {
-        color: #f1f1f1;
+    .boletinNovedades {
+        width: 95%;
+        height: auto;
+        padding-top: 20px;
     }
 
-    p {
-        /* margin-left: 18px; */
-
+    .formularioBoletinNovedades {
+        display: block;
+        width: 95%;
     }
 
-    .logo {
+    .redesSociales {
+        display: flex;
+        width: 95%;
+        padding-bottom: 40px;
+    }
 
-        display: grid;
-        width: 50%;
-        margin: 0 auto;
-        margin-left: 210px;
-        grid-template-columns: 1fr 1fr;
-
+    .productosFooter {
+        width: 95%;
+        height: auto;
     }
 
     .logo img {
-        width: 130%;
+        display: none;
     }
 
     .formulario {
-        display: grid;
-        width: 50%;
         margin: 0 auto;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        margin-left: 15px;
-        >>>>>>>origin/Gonza
-    }
-
-    .form {
-        background-color: rgba(0, 0, 0, 0.5);
-        display: block;
-        padding: 20px;
-        height: 95%;
-        border-radius: 20px;
-        background: border-box;
-    }
-
-    .form input {
-        display: inline-flex;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        padding-right: 20px;
-    }
-
-    h5 {
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+        height: max-content;
         text-align: center;
     }
 
+    .input {
+        padding: 15px 15px;
+    }
 
-    @media screen and (max-width: 768px) {
+    .contenedorCheck {
+        margin-right: 100px;
+    }
 
-        footer {
-            display: block;
-            height: unset;
-            position: relative;
-        }
+    .botonCheck {
+        text-align: center;
+        width: 100%;
+        margin-left: 110px;
+    }
 
-        .boletinNovedades {
-            width: 95%;
-            height: auto;
-            padding-top: 20px;
-        }
+    .recordatorio {
+        margin-left: 0px;
+    }
 
-        .formularioBoletinNovedades {
-            display: block;
-            width: 95%;
-        }
+    .boton {
+        text-align: center;
+        margin-right: 60px;
+        padding: 15px 15px;
+    }
 
-        .redesSociales {
-            display: flex;
-            width: 95%;
-            padding-bottom: 40px;
-        }
+    .recuperar {
+        margin-right: 50px;
+    }
 
-        .productosFooter {
-            width: 95%;
-            height: auto;
-        }
+    .visualPrimaria {
+        display: block;
+        height: auto;
+    }
 
-        .logo img {
-            display: none;
-        }
+    .logoPrincipal {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-        .formulario {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 0%;
-            height: max-content;
-            text-align: center;
-        }
+    .productosPrincipal {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        margin: 10px auto;
+        text-align: center;
+    }
 
-        .input {
-            padding: 15px 15px;
-        }
+    #checkRecordarme {
+        display: block;
+        text-align: center;
+        margin: 10px;
+        font-weight: 300;
+    }
 
-        .contenedorCheck {
-            margin-right: 100px;
-        }
+    .btnLogin {
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #272727;
+        cursor: pointer;
+        border: 3px solid;
+        padding: 0.25em 0.5em;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+        background-color: #efb810;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
 
-        .botonCheck {
-            text-align: center;
-            width: 100%;
-            margin-left: 110px;
-        }
+    .btnLogin:hover {
+        background-color: #1465bb;
+        color: #272727;
+    }
 
-        .recordatorio {
-            margin-left: 0px;
-        }
+    .btnLogin:active {
+        box-shadow: 0px 0px 0px 0px;
+        top: 5px;
+        left: 5px;
+        background-color: #f1f1f1;
+    }
 
-        .boton {
-            text-align: center;
-            margin-right: 60px;
-            padding: 15px 15px;
-        }
+    .recuperarPwd {
+        display: block;
+        text-align: center;
+        color: #f1f1f1;
+        text-decoration: none;
+        font-weight: 300;
+    }
+}
 
-        .recuperar {
-            margin-right: 50px;
-        }
 
-        .visualPrimaria {
-            display: block;
-            height: auto;
-        }
+@media (min-width:769px) {
 
-        .logoPrincipal {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    .menuMovil {
+        display: none;
+    }
 
-        .productosPrincipal {
-            display: flex;
-            width: 100%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 16px;
-            margin: 10px auto;
-            text-align: center;
-        }
+    .barraNavegacion {
+        display: flex;
+    }
 
-        #checkRecordarme {
-            display: block;
-            text-align: center;
-            margin: 10px;
-            font-weight: 300;
-        }
+    .logo {
+        display: flex;
+        width: 50%;
+        margin-right: 5vw;
+        justify-content: right;
+    }
 
-        .btnLogin {
-            display: block;
-            font-size: 16px;
-            font-weight: 300;
-            letter-spacing: 2px;
-            color: #272727;
-            cursor: pointer;
-            border: 3px solid;
-            padding: 0.25em 0.5em;
-            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-            background-color: #efb810;
-            width: 80%;
-            margin: 0 auto 20px;
-        }
+    .logo img {
+        width: 60%;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
 
-        .btnLogin:hover {
-            background-color: #1465bb;
-            color: #272727;
-        }
+    form {
+        margin-left: 8vw;
+        margin-right: 8vw;
+        width: 50%;
+    }
 
-        .btnLogin:active {
-            box-shadow: 0px 0px 0px 0px;
-            top: 5px;
-            left: 5px;
-            background-color: #f1f1f1;
-        }
-
-        .recuperarPwd {
-            display: block;
-            text-align: center;
-            color: #f1f1f1;
-            text-decoration: none;
-            font-weight: 300;
-        }
-
-        @media (min-width:769px) {
-
-            .menuMovil {
-                display: none;
-            }
-
-            .barraNavegacion {
-                display: flex;
-            }
-
-            .logo {
-                display: flex;
-                width: 50%;
-                margin-right: 5vw;
-                justify-content: right;
-            }
-
-            .logo img {
-                width: 60%;
-                padding: 30px;
-                background-color: rgba(0, 0, 0, 0.5);
-                border-radius: 10px;
-            }
-
-            form {
-                margin-left: 8vw;
-                margin-right: 8vw;
-                width: 50%;
-                >>>>>>>origin/produccion
-            }
-
-        }
+}
