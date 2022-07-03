@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/menu.css">
-    
+    <link rel="stylesheet" href="css/addtocart.css">
 </head>
 
-<body class="background" data-src="images/backgrounds/registro.jpg">
+<body class="background" data-src="images/backgrounds/checkout.jpg">
 
     <header>
         <nav>
@@ -21,22 +21,68 @@
                 <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader">
             </a>
 
+            <input type="checkbox" id="botonMenuMovil">
+            <label for="botonMenuMovil" id="fontAwsomeBoton" ><i class="fa-solid fa-bars fa-2x" id="textoBotonMenuMovil"></i></label>
+
             <ul class="barraNavegacion">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/productos">Nuestras Cervezas</a></li>
-                <li><a href="/login">Iniciar Sesión</a></li>
-                <li><a href="/registro">Registrarse</a></li>
-                <li><a href="/checkout">Carrito de Compras</a></li>
+                <li>
+                    <a href="/"><i class="fa-solid fa-house"></i> Inicio</a>
+                </li>
+                <li>
+                    <a href="/productos"><i class="fa-solid fa-beer-mug-empty"></i> Nuestras Cervezas</a>
+                </li>
+                <li>
+                    <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="/registro"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+                </li>
+                <li>
+                    <a href="/checkout"><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras</a>
+                </li>
             </ul>
 
-            <div class="menuMovil">
-                <button id="botonMenuMovil"><i class="fa-solid fa-bars fa-2x" id="textoBotonMenuMovil"></i></button>
-            </div>
-
         </nav>
+
     </header>
 
-    <main>
+    <main class="contenedor">
+
+        <section class="columnaIzquierda">
+
+            <img src="images/productos/r2d2.png" alt="">
+
+        </section>
+
+        <section class="columnaDerecha">
+
+            <div class="titulos">
+                <h2 class="titulo">R2-D2 - Kölsch</h2>
+                <h2 class="titulo amarillo">$ 499.99</h2>
+            </div>
+
+            <p class="descripcionProducto">La cerveza Kölsch es una especialidad alemana. Éste estilo esta dentro de las cervezas híbridas claras. Como cerveza híbrida se elabora a fermentación alta como una Ale y se madura a temperaturas bajas como una Lager. Tiene un sutil aroma lupulado y un carácter limpio.</p>
+
+            <div class="selectorCantidad">
+                <label for="cantidadItemCarrito">Cantidad</label>
+                <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <!-- <input id="btnComprar" type="button" name="btnComprar" value="Comprar" class="btnComprar" /> -->
+            <a class="btnComprar" href="/checkout">Comprar</a>
+
+        </section>
 
 
     </main>
@@ -110,8 +156,6 @@
 
 
     </footer>
-
-    <!-- <script src="js/background.js"></script> -->
 
 </body>
 </html>

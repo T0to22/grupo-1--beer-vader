@@ -1,0 +1,97 @@
+/* BACKGROUND */
+body {
+    background: url(/images/backgrounds/registro.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    color: #f1f1f1;
+    animation: efectoFadeIn 5s;
+}
+
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    padding-top: 30px;
+    height: 70vh;
+}
+
+/* LADO IZQUIERDO */
+.columnaIzquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+/* LADO DERECHO */
+.columnaDerecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.amarillo {
+    color: #efb810;
+}
+
+.descripcionProducto {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.selectorCantidad {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btnComprar {
+    margin-top: 20px;
+    width: 90%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #272727;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    background-color: #efb810;
+    text-decoration: none;
+    text-align: center;
+}

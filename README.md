@@ -45,12 +45,8 @@ Fundamentalista de Diego Armando Maradona
 Y claro...de la birra bien fría y Star Wars.
 
 ### Gonza
-<<<<<<< HEAD
-Mi familia, Talleres y el fernet.
-=======
 Soy Gonza, tengo 30 años y trabajo en un taller de Chapa y pintura automotriz.
 Familiero, fanatico de Talleres y de Maradona, amante del fernet y el vino tinto.
->>>>>>> origin/Toto
 
 ### Toto
 Fotógrafo, músico, melómano, paciente. Me gusta la montaña, los atardeceres y el mate amargo.

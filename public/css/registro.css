@@ -9,6 +9,10 @@ body {
     color: #f1f1f1;
 }
 
+footer {
+    display:relative;
+}
+
 main {
     
     align-items: center;
@@ -34,6 +38,7 @@ main {
 display:flex;
 align-items:center;
 height: 100%;
+margin-top:5%;
 }
 
 .logo{

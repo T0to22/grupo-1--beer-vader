@@ -11,15 +11,13 @@
       type="image/x-icon"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
 
-    <link rel="stylesheet" href="css/registro.css" />
-  </head>
+<body>
 
   <body class="background" data-src="images/backgrounds/registro.jpg">
     <header>
@@ -32,20 +30,30 @@
           />
         </a>
 
-        <ul class="barraNavegacion">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/productos">Nuestras Cervezas</a></li>
-          <li><a href="/login">Iniciar Sesión</a></li>
-          <li><a href="/registro">Registrarse</a></li>
-          <li><a href="/checkout">Carrito de Compras</a></li>
-        </ul>
+            <input type="checkbox" id="botonMenuMovil">
+            <label for="botonMenuMovil" id="fontAwsomeBoton"><i class="fa-solid fa-bars fa-2x"
+                    id="textoBotonMenuMovil"></i></label>
 
-        <div class="menuMovil">
-          <button id="botonMenuMovil">
-            <i class="fa-solid fa-bars fa-2x" id="textoBotonMenuMovil"></i>
-          </button>
-        </div>
-      </nav>
+            <ul class="barraNavegacion">
+                <li>
+                    <a href="/"><i class="fa-solid fa-house"></i> Inicio</a>
+                </li>
+                <li>
+                    <a href="/productos"><i class="fa-solid fa-beer-mug-empty"></i> Nuestras Cervezas</a>
+                </li>
+                <li>
+                    <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="/registro"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+                </li>
+                <li>
+                    <a href="/checkout"><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras</a>
+                </li>
+            </ul>
+
+        </nav>
+
     </header>
 
     <main>
@@ -162,41 +170,31 @@
             />
           </a>
 
-          <a class="linkProducto" href="#">
-            <img
-              class="imgProductoFooter"
-              src="images/productos/r2d2.png"
-              alt=""
-            />
-          </a>
+                <a class="linkProducto" href="/productos#c3po-beer">
+                    <img class="imgProductoFooter" src="images/productos/c3po.png" alt="C3PO">
+                </a>
 
-          <a class="linkProducto" href="#">
-            <img
-              class="imgProductoFooter"
-              src="images/productos/chuwbacca.png"
-              alt=""
-            />
-          </a>
+                <a class="linkProducto" href="/productos#r2d2-beer">
+                    <img class="imgProductoFooter" src="images/productos/r2d2.png" alt="R2-D2">
+                </a>
 
-          <a class="linkProducto" href="#">
-            <img
-              class="imgProductoFooter"
-              src="images/productos/han-solo.png"
-              alt=""
-            />
-          </a>
+                <a class="linkProducto" href="/productos#chuwbacca-beer">
+                    <img class="imgProductoFooter" src="images/productos/chuwbacca.png" alt="Chuwbacca">
+                </a>
 
-          <a class="linkProducto" href="#">
-            <img
-              class="imgProductoFooter"
-              src="images/productos/storm-trooper.png"
-              alt=""
-            />
-          </a>
-        </div>
-      </section>
+                <a class="linkProducto" href="/productos#hansolo-beer">
+                    <img class="imgProductoFooter" src="images/productos/han-solo.png" alt="Han Solo">
+                </a>
+
+                <a class="linkProducto" href="/productos#stormtrooper-beer">
+                    <img class="imgProductoFooter" src="images/productos/storm-trooper.png" alt="Storm Trooper">
+                </a>
+
+            </div>
+
+        </section>
+
     </footer>
 
-    <!-- <script src="js/background.js"></script> -->
-  </body>
+</body>
 </html>

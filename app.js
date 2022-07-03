@@ -2,7 +2,7 @@
 const EXPRESS = require('express');
 const APP = EXPRESS();
 const PATH = require('path');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 //Carpeta Publica
 const PUBLIC_DIR = PATH.join(__dirname, 'public');
@@ -44,10 +44,10 @@ APP.get('/checkout', (req, res) => {
 });
 
 //Pagina de Error
-// APP.get('*', (req, res) => {
-//     res.sendFile(PATH.join(VIEWS_DIR, 'error.html'));
-// }
-// );
+APP.get('/inicio', (req, res) => {
+    res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
+}
+);
 
 //Iniciar Servidor
 APP.listen(PORT, () => {

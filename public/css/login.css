@@ -1,27 +1,13 @@
-<<<<<<< HEAD
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 /* GENERALES */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-	background: url(/images/background/background-baja.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-family: 'Lato', sans-serif;
-	color: #f1f1f1;
-}
-.logo{
-width: 50%;
-=======
 /* BACKGROUND */
 body {
     background: url(/images/backgrounds/login.jpg) no-repeat center center fixed;
@@ -31,5 +17,246 @@ body {
     background-size: cover;
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
->>>>>>> origin/Toto
+}
+
+.visualPrimaria {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.login {
+    display: contents;
+    justify-content: center;
+    height: 300px;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    color: #f1f1f1;
+    text-align: center;
+    margin-right: 15px;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    color: #272727;
+    width: 80%;
+    margin: 20px;
+    display: flex;
+}
+
+.etiquetas {
+    padding: 7px 7px;
+    border-radius: 5px;
+}
+
+.boton {
+    font-family: 'Lato', sans-serif;
+    color: #272727;
+    width: 50%;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+
+.recordatorio{
+    font-family: 'Lato', sans-serif;
+    color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    margin-right: 28px;
+    
+}
+
+.contenedorCheck {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: -15px;
+    margin-top: -15px;
+}
+
+.botonCheck {
+    margin-right: -30px;
+}
+
+<<<<<<< HEAD
+.recuperar {
+    color: azure;
+}
+
+p {
+    margin-left: 18px;
+
+}
+
+.logo {
+    text-align: right;
+    margin-right: 160px;
+}
+
+.logo img {
+    width: 35%;
+}
+
+.formulario {
+    margin-right: 60vh;
+    height: 300px;
+    color: #f1f1f1;
+    margin-left: 20px;
+=======
+.recuperar{
+    width: 100%;
+    margin-left: 5px;
+}
+
+.recuperar-link{
+    color: #f1f1f1;
+}
+
+p{
+    /* margin-left: 18px; */
+    
+}
+
+.logo{
+   
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 210px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.logo img{	
+	width: 130%;
+}
+
+.formulario{
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 15px;
+>>>>>>> origin/Gonza
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 20px;
+    height: 95%;
+    border-radius: 20px;
+    background: border-box;
+}
+
+.form input {
+    display: inline-flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+h5 {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        display: block;
+        height: unset;
+        position: relative;
+    }
+
+    .boletinNovedades {
+        width: 95%;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .formularioBoletinNovedades {
+        display: block;
+        width: 95%;
+    }
+
+    .redesSociales {
+        display: flex;
+        width: 95%;
+        padding-bottom: 40px;
+    }
+
+    .productosFooter {
+        width: 95%;
+        height: auto;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .formulario {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+        height: max-content;
+        text-align: center;
+    }
+
+    .input {
+        padding: 15px 15px;
+    }
+
+    .contenedorCheck {
+        margin-right: 100px;
+    }
+
+    .botonCheck {
+        text-align: center;
+        width: 100%;
+        margin-left: 110px;
+    }
+
+    .recordatorio {
+        margin-left: 0px;
+    }
+
+    .boton {
+        text-align: center;
+        margin-right: 60px;
+        padding: 15px 15px;
+    }
+
+    .recuperar {
+        margin-right: 50px;
+    }
+
+    .visualPrimaria {
+        display: block;
+        height: auto;
+    }
+
+    .logoPrincipal {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .productosPrincipal {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }

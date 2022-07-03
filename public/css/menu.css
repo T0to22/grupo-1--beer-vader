@@ -4,7 +4,7 @@
 header {
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* MENU DE NAVEGACION */
@@ -29,9 +29,9 @@ nav {
     list-style: none;
 }
 
-.barraNavegacion li {
+/* .barraNavegacion li {
     margin-right: 10px;
-}
+} */
 
 .barraNavegacion li a {
     display: block;
@@ -84,35 +84,51 @@ nav {
     opacity: 1;
 }
 
-.menuMovil {
-    /* text-align: center; */
+#botonMenuMovil{
     display: none;
 }
 
-#botonMenuMovil {
-    background-color: #efb810;
-    border: none;
-    color: #272727;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+#textoBotonMenuMovil{
+    display: none;
 }
 
-/* .barraNavegacion * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-} */
+@media screen and (max-width: 768px) {
 
-/* .barraNavegacion li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: 0 1em;
-    padding: 0;
-} */
+    header {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
 
+    .barraNavegacion {
+        display: none;
+    }
+
+    #fontAwsomeBoton{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #textoBotonMenuMovil {
+        display: flex;
+        background-color: #efb810;
+        border: none;
+        color: #272727;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        align-items: center;        
+    }
+
+    ul {
+        display: none;
+    }
+    
+    input:checked~ul {
+        display: block;
+        text-align: center;
+    }
+
+}

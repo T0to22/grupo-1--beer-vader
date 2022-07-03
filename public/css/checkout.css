@@ -1,25 +1,35 @@
 /* BACKGROUND */
 body {
     background: url(/images/backgrounds/checkout.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     font-family: 'Lato', sans-serif;
     color: #f1f1f1;
+    animation: efectoFadeIn 5s;
 }
 
-/* main{
-	margin-top: 40px;
-} */
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* MAIN */
+
+.visualPrimaria{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    align-items: center;
+}
 
 /* CHECKOUT */
 .checkout {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	height: 70vh;
-	width: 60%;
+	display: flex;
+    justify-content: center;
 }
 
 .tablaCheckout {
@@ -73,20 +83,9 @@ body {
 }
 
 /* RESUMEN */
-/* .resumen{
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 70vh;
-	width: 39%;
-} */
-
 .resumen {
-    display: inline-flex;
+	display: flex;
     justify-content: center;
-    height: 31vh;
-    width: 39%;
 }
 
 .tablaResumen {
@@ -134,14 +133,15 @@ body {
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     
-	main{
+	.visualPrimaria{
 		display: block;
+		height: auto;
 	}
 
 	.checkout {
 		display: flex;
 		width: 100%;
-		height: unset;
+		/* height: unset; */
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -149,7 +149,7 @@ body {
 	.resumen {
 		display: flex;
 		width: 100%;
-		height: unset;
+		/* height: unset; */
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
