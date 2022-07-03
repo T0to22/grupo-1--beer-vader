@@ -1,59 +1,69 @@
 // Constantes Globales
-const EXPRESS = require('express');
-const APP = EXPRESS();
-const PATH = require('path');
+const express = require('express');
+const app = express();
+
+// Configuraciones de Express
+const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
+const PATH = require('path');
+
+//Set EJS como motor de plantillas
+app.set('view engine', 'ejs');
 
 //Carpeta Publica
 const PUBLIC_DIR = PATH.join(__dirname, 'public');
-APP.use(EXPRESS.static(PUBLIC_DIR));
+app.use(express.static(PUBLIC_DIR));
 
 //Carpeta de Archivos HTML
 const VIEWS_DIR = PATH.join(__dirname, 'views');
-APP.set('views', VIEWS_DIR);
+app.set('views', VIEWS_DIR);
+
+//Controlador de Rutas
+const menusRouter = require(PATH.join(__dirname, 'routes', 'menusRouter'));
+app.use('/', menusRouter);
 
 //Rutas
 //Landing Page
-APP.get('/', (req, res) => {
+app.get('/', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'landing.html'));
 });
 
-APP.get('/inicio', (req, res) => {
+app.get('/inicio', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
 });
 
 //Productos
-APP.get('/productos', (req, res) => {
+app.get('/productos', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'productos.html'));
 });
 
 //Login
-APP.get('/login', (req, res) => {
+app.get('/login', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'login.html'));
 });
 
 //Registro
-APP.get('/registro', (req, res) => {
+app.get('/registro', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'registro.html'));
 });
 
 //Seleccion de Cantidades de Producto
-APP.get('/addtocart', (req, res) => {
+app.get('/addtocart', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'addtocart.html'));
 });
 
 //Checkout Carrito de Compras
-APP.get('/checkout', (req, res) => {
+app.get('/checkout', (req, res) => {
 	res.sendFile(PATH.join(VIEWS_DIR, 'checkout.html'));
 });
 
 //Pagina de Error
-APP.get('*', (req, res) => {
+app.get('*', (req, res) => {
     res.sendFile(PATH.join(VIEWS_DIR, '404.html'));
 }
 );
 
 //Iniciar Servidor
-APP.listen(PORT, () => {
-	console.log(`Servidor corriendo en: http://localhost:${PORT}`);
+app.listen(PORT, HOST, () => {
+	console.log(`Server funcionando en http://${HOST}:${PORT}/`);
 });
