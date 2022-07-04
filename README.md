@@ -27,6 +27,9 @@ Dentro de nuestras variedades podran encontrar cervezas Lager, como la Pilsner y
 ## Nuestro Proyecto
 [Beer Vader](https://github.com/T0to22/grupo-1--beer-vader)
 
+## Nuestro Trello
+[Panel de Beer Vader](https://trello.com/b/BXn8lURR/beer-vader-brewery-co)
+
 ## Nuestros Referentes
 [Cerveza Guiness](https://www.guinness.com/) \
 [Delirium Tremens](https://www.delirium.be/) \

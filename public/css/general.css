@@ -19,10 +19,10 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 22vh; */
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
+    padding-top: 10px;
 }
 
 /* BOLETIN DE NOVEDADES */
@@ -30,7 +30,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 22vh; */
     width: 30%;
     margin: auto;
     flex-direction: column;
@@ -50,7 +49,7 @@ footer {
     height: 30px;
     border: 1px solid #f1f1f1;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 3px;
     color: #f1f1f1;
     font-size: 16px;
     font-weight: 300;
@@ -74,6 +73,7 @@ footer {
     background-color: #efb810;
     width: 80%;
     margin-top: 20px;
+    border-radius: 3px;
 }
 
 .botonSuscribirBoletinNovedades:hover {
@@ -136,7 +136,6 @@ footer {
 
     footer {
         display: block;
-        height: unset;
         position: relative;
     }
 

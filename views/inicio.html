@@ -1,68 +1,160 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Vader Brewery Co.</title>
+    <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
+
 <body>
+
     <header>
+        <nav>
+            <a class="linkLogoNavegacion" href="/inicio">
+                <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader" />
+            </a>
 
-        <nav class="navbar bg-dark fixed-top">
-            <div class="container-fluid">
+            <input type="checkbox" id="botonMenuMovil">
+            <label for="botonMenuMovil" id="fontAwsomeBoton"><i class="fa-solid fa-beer-mug-empty fa-2x"
+                    id="textoBotonMenuMovil"></i></label>
 
-                <a class="navbar-brand text-white" href="#">Beer Vader</a>
+            <ul class="barraNavegacion">
+                <li>
+                    <a href="/inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+                </li>
+                <li>
+                    <a href="/productos"><i class="fa-solid fa-award"></i> Nuestras Cervezas</a>
+                </li>
+                <li>
+                    <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="/registro"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+                </li>
+                <li>
+                    <a href="/checkout"><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras</a>
+                </li>
+            </ul>
 
-                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Principal</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Nuestros Productos</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Nuestros Productos
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Birra 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Birra 2</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Otras Birras</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </nav>
+
     </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+    <main class="visualPrimaria">
+
+        <section class="logoPrincipal">
+
+            <div class="contenedorLogoPrincipal">
+                <img class="logoBeerVaderPrincipal" src="images/logos/logo.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="productosPrincipal">
+
+            <div class="grupoLatas">
+
+                <a class="linkProductoPrincipal" href="/productos#c3po-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/c3po.png" alt="C3PO">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#r2d2-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/r2d2.png" alt="R2-D2">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#chuwbacca-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/chuwbacca.png" alt="Chuwbacca">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#hansolo-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/han-solo.png" alt="Han Solo">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#stormtrooper-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/storm-trooper.png" alt="Storm Trooper">
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="boletinNovedades">
+
+            <h3>Boletín de Novedades</h3>
+
+            <form class="formularioBoletinNovedades" action="">
+                <div>
+                    <input class="emailNovedades" type="email" name="emailNovedades" id="emailNovedades"
+                        placeholder="suscribite@beervader.com">
+
+                    <div class="divBotonBoletin">
+                        <input class="botonSuscribirBoletinNovedades" type="button" value="Suscribirme!">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="redesSociales">
+
+            <div class="iconosRedesSociales">
+
+                <a class="linkSocial" href="#">
+                    <img class="imgSocialesFooter" src="images/logos/logo-fb.svg" alt="Facebook">
+                </a>
+
+                <a class="linkSocial" href="#">
+                    <img class="imgSocialesFooter" src="images/logos/logo-ig.svg" alt="Instagram">
+                </a>
+
+            </div>
+
+            <div class="copyright">
+                <p>©2022 - Beer Vader Brewery Co.</p>
+            </div>
+
+        </section>
+
+        <section class="productosFooter">
+
+            <div class="linkProductos">
+
+                <a class="linkProducto" href="/productos#c3po-beer">
+                    <img class="imgProductoFooter" src="images/productos/c3po.png" alt="C3PO">
+                </a>
+
+                <a class="linkProducto" href="/productos#r2d2-beer">
+                    <img class="imgProductoFooter" src="images/productos/r2d2.png" alt="R2-D2">
+                </a>
+
+                <a class="linkProducto" href="/productos#chuwbacca-beer">
+                    <img class="imgProductoFooter" src="images/productos/chuwbacca.png" alt="Chuwbacca">
+                </a>
+
+                <a class="linkProducto" href="/productos#hansolo-beer">
+                    <img class="imgProductoFooter" src="images/productos/han-solo.png" alt="Han Solo">
+                </a>
+
+                <a class="linkProducto" href="/productos#stormtrooper-beer">
+                    <img class="imgProductoFooter" src="images/productos/storm-trooper.png" alt="Storm Trooper">
+                </a>
+
+            </div>
+
+        </section>
+
+    </footer>
+
 </body>
 </html>

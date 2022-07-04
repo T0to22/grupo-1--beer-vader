@@ -1,10 +1,142 @@
 /* BACKGROUND */
 body {
     background: url(/images/backgrounds/login.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    font-family: 'Lato', sans-serif;
+    animation: efectoFadeIn 2s;
+}
+
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+
+    align-items: center;
+}
+
+.tituloLogin {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.menuMovil {
+    display: flex;
+}
+
+.barraNavegacion {
+    display: none;
+}
+
+.logoYBox {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.logo {
+    display: none;
+
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.inputEntradaLogin {
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
     color: #f1f1f1;
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#checkRecordarme{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-weight: 300;
+}
+
+.btnLogin {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #272727;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    background-color: #efb810;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+.btnLogin:hover {
+	background-color: #1465bb;
+	color: #272727;
+}
+
+.btnLogin:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+	background-color: #f1f1f1;
+}
+
+.recuperarPwd{
+    display: block;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+@media (min-width:769px) {
+
+    .menuMovil {
+        display: none;
+    }
+
+    .barraNavegacion {
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+        width: 50%;
+        margin-right: 5vw;
+        justify-content: right;
+    }
+
+    .logo img {
+        width: 60%;
+        padding: 30px;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 10px;
+    }
+
+    form {
+        margin-left: 8vw;
+        margin-right: 8vw;
+        width: 50%;
+    }
+
 }

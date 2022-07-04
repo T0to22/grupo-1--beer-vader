@@ -1,0 +1,111 @@
+/* BACKGROUND */
+body {
+    background: url(/images/backgrounds/index.jpg) no-repeat center center fixed;
+    background-size: cover;
+    animation: efectoFadeIn 5s;
+}
+
+@keyframes efectoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer{
+    position: relative;
+}
+
+/* MAIN */
+.visualPrimaria{
+    display: block;
+    align-items: center;
+}
+
+/* LOGO PRINCIPAL */
+.logoPrincipal {
+    text-align: center;
+    padding: 30px;
+}
+
+.contenedorLogoPrincipal{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.logoBeerVaderPrincipal{
+    width: 30%;
+}
+
+/* FILA DE PRODUCTOS */
+.productosPrincipal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgProductoPrincipal {
+    max-width: 25%;
+    margin: 10px;
+}
+
+.linkProductoPrincipal {
+    text-align: center;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.grupoLatas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 90%;
+}
+
+.linkProductoPrincipal {
+    text-align: center;
+    position: relative;
+}
+
+.imgProductoPrincipal {
+    transition: all 200ms ease-in;
+}
+
+.imgProductoPrincipal:hover {
+    transition: all 200ms ease-in;
+    animation: moverLata 2s;
+}
+
+@keyframes moverLata {
+    50% {
+        transform: rotate(360deg);
+    }
+}
+  
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    
+	.visualPrimaria{
+		display: block;
+		height: auto;
+	}
+
+	.logoPrincipal {
+		display: flex;
+        justify-content: center;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.productosPrincipal {
+		display: flex;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
