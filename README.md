@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+Giuli 
+Soy abogada, una persona muy sociable, sensible y empática.
+Me gusta mucho ir al gimnasio, estar al aire libre, aprender cosas nuevas y tener charlas profundas.
+Estoy tratando de cambiar mis propios paradigmas de vida.- 
+=======
 ![Logo Beer Vader](/design/logo-bv.png "Logo Beer Vader")
 # Beer Vader:
 
@@ -55,3 +61,4 @@ Familiero, fanatico de Talleres y de Maradona, amante del fernet y el vino tinto
 Fotógrafo, músico, melómano, paciente. Me gusta la montaña, los atardeceres y el mate amargo.
 Star Wars, Jurassic Park, Guns N Roses, Pink Floyd y Los Beatles. El Principito me cambio la vida.
 Guia Espiritual (segun mis compas).
+>>>>>>> Toto
