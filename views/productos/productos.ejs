@@ -5,292 +5,204 @@
 
     <body>
 
-        <header>
-            <nav>
-                <a class="linkLogoNavegacion" href="/inicio">
-                    <img class="logoNavegacion" src="images/logos/logo-header.svg" alt="Logo Beer Vader" />
-                </a>
+        <%- include('./partials/Header') %>
 
-                <input type="checkbox" id="botonMenuMovil">
-                <label for="botonMenuMovil" id="fontAwsomeBoton"><i class="fa-solid fa-beer-mug-empty fa-2x"
-                        id="textoBotonMenuMovil"></i></label>
+            <main class="visualPrimaria">
 
-                <ul class="barraNavegacion">
-                    <li>
-                        <a href="/inicio"><i class="fa-solid fa-house"></i> Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/productos"><i class="fa-solid fa-award"></i> Nuestras Cervezas</a>
-                    </li>
-                    <li>
-                        <a href="/login"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
-                    </li>
-                    <li>
-                        <a href="/registro"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
-                    </li>
-                    <li>
-                        <a href="/checkout"><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras</a>
-                    </li>
-                </ul>
+                <a name="c3po-beer"></a>
 
-            </nav>
+                <article class="contenedorCervezaIzquierda">
 
-        </header>
-
-        <main class="visualPrimaria">
-
-            <a name="c3po-beer"></a>
-
-            <article class="contenedorCervezaIzquierda">
-
-                <div class="contenedorImagenProductoIzquierda">
-                    <img class="imagenProducto" src="images/productos/c3po.png" alt="C3PO">
-                </div>
-
-                <div class="descripcionProductoIzquierda">
-
-                    <h2 class="nombreCerveza">C3PO</h2>
-                    <h3 class="tipoCerveza">Pilsner Beer</h3>
-
-                    <div class="parrafoDescripcionProducto">
-                        <p class="parrafo">Hecha con maltas de Moravia tipo pilsen, agua de baja dureza y sobre todo con
-                            lúpulo checo de
-                            Zatec
-                            (Saaz) es fermentado con levadura de baja fermentación.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
-                            Se caracteriza por ser limpio y contar con una complejo y rica sensación a malta</p>
-                        <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
-                            Se caracteriza por ser complejo, con tonos a malta acompañados por lo especiado de los
-                            lúpulos,
-                            un amargor notable y un acabado limpio y sin ésteres afrutados destacados.
-                        </p>
+                    <div class="contenedorImagenProductoIzquierda">
+                        <img class="imagenProducto" src="images/productos/c3po.png" alt="C3PO">
                     </div>
 
-                    <div class="footerDescripcionProducto">
-                        <button class="infoIBUAlcohol">7 IBU</button>
-                        <button class="infoIBUAlcohol">5.8% ABV</button>
-                        <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
-                    </div>
+                    <div class="descripcionProductoIzquierda">
 
-                </div>
+                        <h2 class="nombreCerveza">C3PO</h2>
+                        <h3 class="tipoCerveza">Pilsner Beer</h3>
 
-            </article>
-
-            <a name="hansolo-beer"></a>
-
-            <article class="contenedorCervezaDerecha">
-
-
-                <div class="descripcionProductoDerecha">
-
-                    <h2 class="nombreCerveza">Han Solo</h2>
-                    <h3 class="tipoCerveza">Helles Beer</h3>
-
-                    <div class="parrafoDescripcionProducto">
-                        <p class="parrafo">Cerveza lager pálida tradicionalmente del sur de Alemania. Creada en Munich
-                            en
-                            1895 en la cervecería Spaten por Gabriel Sedlmayr con el objeto de competir con las cervezas
-                            estilo Pilsner.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
-                            Tiene un sabor a malta más suave que la Pilsner.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
-                            Debido a su extraordinario sabor se popularizó rápidamente, y aún hoy en día sigue siendo
-                            muy
-                            popular, especialmente en el sur de Alemania. A diferencia de las pils, es menos amarga.
-                        </p>
-                    </div>
-
-                    <div class="footerDescripcionProducto">
-                        <button class="infoIBUAlcohol">7 IBU</button>
-                        <button class="infoIBUAlcohol">5.8% ABV</button>
-                        <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
-                    </div>
-
-                </div>
-
-                <div class="contenedorImagenProductoDerecha">
-                    <img class="imagenProducto" src="images/productos/han-solo.png" alt="C3PO">
-                </div>
-
-            </article>
-
-            <a name="r2d2-beer"></a>
-
-            <article class="contenedorCervezaIzquierda">
-
-                <div class="contenedorImagenProductoIzquierda">
-                    <img class="imagenProducto" src="images/productos/r2d2.png" alt="C3PO">
-                </div>
-
-                <div class="descripcionProductoIzquierda">
-
-                    <h2 class="nombreCerveza">R2-D2</h2>
-                    <h3 class="tipoCerveza">Kölsch Beer</h3>
-
-                    <div class="parrafoDescripcionProducto">
-                        <p class="parrafo">La Kölsch es una especialidad local de cerveza elaborada en Colonia
-                            (Alemania).
-                            Es una cerveza clara, su tonalidad es amarilla brillante y tiene un gusto prominente, pero
-                            no
-                            extremo de lúpulo.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
-                            Es una cerveza dorada, fresca en aroma.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
-                            Goza de un alegre sabor frutado con un acabado seco del lúpulo final.
-                        </p>
-                    </div>
-
-                    <div class="footerDescripcionProducto">
-                        <button class="infoIBUAlcohol">7 IBU</button>
-                        <button class="infoIBUAlcohol">5.8% ABV</button>
-                        <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
-                    </div>
-
-                </div>
-
-            </article>
-
-            <a name="stormtrooper-beer"></a>
-
-            <article class="contenedorCervezaDerecha">
-
-                <div class="descripcionProductoDerecha">
-
-                    <h2 class="nombreCerveza">Storm Trooper</h2>
-                    <h3 class="tipoCerveza">Scottish Beer</h3>
-
-                    <div class="parrafoDescripcionProducto">
-                        <p class="parrafo">Cerveza de origen escocés, que se desarrolló como una adaptación del estilo
-                            Pale
-                            Ale Inglés, pero con menor contenido alcohólico, color más rojizo, y amargor más suave.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
-                            Se caracteriza por un pronunciado carácter malteado.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
-                            Amargor leve y una terminación ligeramente dulce, contenido alcohólico medio, buen cuerpo y
-                            excelente sabor.
-                        </p>
-                    </div>
-
-                    <div class="footerDescripcionProducto">
-                        <button class="infoIBUAlcohol">7 IBU</button>
-                        <button class="infoIBUAlcohol">5.8% ABV</button>
-                        <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
-                    </div>
-
-                </div>
-
-                <div class="contenedorImagenProductoDerecha">
-                    <img class="imagenProducto" src="images/productos/storm-trooper.png" alt="C3PO">
-                </div>
-
-            </article>
-
-            <a name="chuwbacca-beer"></a>
-
-            <article class="contenedorCervezaIzquierda">
-
-                <div class="contenedorImagenProductoIzquierda">
-                    <img class="imagenProducto" src="images/productos/chuwbacca.png" alt="C3PO">
-                </div>
-
-                <div class="descripcionProductoIzquierda">
-
-                    <h2 class="nombreCerveza">Chuwbacca</h2>
-                    <h3 class="tipoCerveza">Pale Ale Beer</h3>
-
-                    <div class="parrafoDescripcionProducto">
-                        <p class="parrafo">De graduación alcohólica alta, es un tipo de cerveza preciada y realmente
-                            gustosa. Suele ser natural, ya que no lleva aditivos ni conservantes, sino levadura no
-                            filtrada.
-                        </p>
-                        <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
-                            Con un color algo más claro, el sabor es cremoso y suave, muy puro al ser artesanal y tan
-                            natural.</p>
-                        <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
-                            Nos ofrece toques cítricos y algo amargos.
-                        </p>
-                    </div>
-
-                    <div class="footerDescripcionProducto">
-                        <button class="infoIBUAlcohol">7 IBU</button>
-                        <button class="infoIBUAlcohol">5.8% ABV</button>
-                        <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
-                    </div>
-
-                </div>
-
-            </article>
-
-        </main>
-
-        <footer>
-
-            <section class="boletinNovedades">
-
-                <h3>Boletín de Novedades</h3>
-
-                <form class="formularioBoletinNovedades" action="">
-                    <div>
-                        <input class="emailNovedades" type="email" name="emailNovedades" id="emailNovedades"
-                            placeholder="suscribite@beervader.com">
-
-                        <div class="divBotonBoletin">
-                            <input class="botonSuscribirBoletinNovedades" type="button" value="Suscribirme!">
+                        <div class="parrafoDescripcionProducto">
+                            <p class="parrafo">Hecha con maltas de Moravia tipo pilsen, agua de baja dureza y sobre todo
+                                con
+                                lúpulo checo de
+                                Zatec
+                                (Saaz) es fermentado con levadura de baja fermentación.</p>
+                            <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
+                                Se caracteriza por ser limpio y contar con una complejo y rica sensación a malta</p>
+                            <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
+                                Se caracteriza por ser complejo, con tonos a malta acompañados por lo especiado de los
+                                lúpulos,
+                                un amargor notable y un acabado limpio y sin ésteres afrutados destacados.
+                            </p>
                         </div>
+
+                        <div class="footerDescripcionProducto">
+                            <button class="infoIBUAlcohol">7 IBU</button>
+                            <button class="infoIBUAlcohol">5.8% ABV</button>
+                            <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
+                        </div>
+
                     </div>
-                </form>
 
-            </section>
+                </article>
 
-            <section class="redesSociales">
+                <a name="hansolo-beer"></a>
 
-                <div class="iconosRedesSociales">
+                <article class="contenedorCervezaDerecha">
 
-                    <a class="linkSocial" href="#">
-                        <img class="imgSocialesFooter" src="images/logos/logo-fb.svg" alt="Facebook">
-                    </a>
 
-                    <a class="linkSocial" href="#">
-                        <img class="imgSocialesFooter" src="images/logos/logo-ig.svg" alt="Instagram">
-                    </a>
+                    <div class="descripcionProductoDerecha">
 
-                </div>
+                        <h2 class="nombreCerveza">Han Solo</h2>
+                        <h3 class="tipoCerveza">Helles Beer</h3>
 
-                <div class="copyright">
-                    <p>©2022 - Beer Vader Brewery Co.</p>
-                </div>
+                        <div class="parrafoDescripcionProducto">
+                            <p class="parrafo">Cerveza lager pálida tradicionalmente del sur de Alemania. Creada en
+                                Munich
+                                en
+                                1895 en la cervecería Spaten por Gabriel Sedlmayr con el objeto de competir con las
+                                cervezas
+                                estilo Pilsner.</p>
+                            <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
+                                Tiene un sabor a malta más suave que la Pilsner.</p>
+                            <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
+                                Debido a su extraordinario sabor se popularizó rápidamente, y aún hoy en día sigue
+                                siendo
+                                muy
+                                popular, especialmente en el sur de Alemania. A diferencia de las pils, es menos amarga.
+                            </p>
+                        </div>
 
-            </section>
+                        <div class="footerDescripcionProducto">
+                            <button class="infoIBUAlcohol">7 IBU</button>
+                            <button class="infoIBUAlcohol">5.8% ABV</button>
+                            <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
+                        </div>
 
-            <section class="productosFooter">
+                    </div>
 
-                <div class="linkProductos">
+                    <div class="contenedorImagenProductoDerecha">
+                        <img class="imagenProducto" src="images/productos/han-solo.png" alt="C3PO">
+                    </div>
 
-                    <a class="linkProducto" href="/productos#c3po-beer">
-                        <img class="imgProductoFooter" src="images/productos/c3po.png" alt="C3PO">
-                    </a>
+                </article>
 
-                    <a class="linkProducto" href="/productos#r2d2-beer">
-                        <img class="imgProductoFooter" src="images/productos/r2d2.png" alt="R2-D2">
-                    </a>
+                <a name="r2d2-beer"></a>
 
-                    <a class="linkProducto" href="/productos#chuwbacca-beer">
-                        <img class="imgProductoFooter" src="images/productos/chuwbacca.png" alt="Chuwbacca">
-                    </a>
+                <article class="contenedorCervezaIzquierda">
 
-                    <a class="linkProducto" href="/productos#hansolo-beer">
-                        <img class="imgProductoFooter" src="images/productos/han-solo.png" alt="Han Solo">
-                    </a>
+                    <div class="contenedorImagenProductoIzquierda">
+                        <img class="imagenProducto" src="images/productos/r2d2.png" alt="C3PO">
+                    </div>
 
-                    <a class="linkProducto" href="/productos#stormtrooper-beer">
-                        <img class="imgProductoFooter" src="images/productos/storm-trooper.png" alt="Storm Trooper">
-                    </a>
+                    <div class="descripcionProductoIzquierda">
 
-                </div>
+                        <h2 class="nombreCerveza">R2-D2</h2>
+                        <h3 class="tipoCerveza">Kölsch Beer</h3>
 
-            </section>
+                        <div class="parrafoDescripcionProducto">
+                            <p class="parrafo">La Kölsch es una especialidad local de cerveza elaborada en Colonia
+                                (Alemania).
+                                Es una cerveza clara, su tonalidad es amarilla brillante y tiene un gusto prominente,
+                                pero
+                                no
+                                extremo de lúpulo.</p>
+                            <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
+                                Es una cerveza dorada, fresca en aroma.</p>
+                            <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
+                                Goza de un alegre sabor frutado con un acabado seco del lúpulo final.
+                            </p>
+                        </div>
 
-        </footer>
+                        <div class="footerDescripcionProducto">
+                            <button class="infoIBUAlcohol">7 IBU</button>
+                            <button class="infoIBUAlcohol">5.8% ABV</button>
+                            <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <a name="stormtrooper-beer"></a>
+
+                <article class="contenedorCervezaDerecha">
+
+                    <div class="descripcionProductoDerecha">
+
+                        <h2 class="nombreCerveza">Storm Trooper</h2>
+                        <h3 class="tipoCerveza">Scottish Beer</h3>
+
+                        <div class="parrafoDescripcionProducto">
+                            <p class="parrafo">Cerveza de origen escocés, que se desarrolló como una adaptación del
+                                estilo
+                                Pale
+                                Ale Inglés, pero con menor contenido alcohólico, color más rojizo, y amargor más suave.
+                            </p>
+                            <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
+                                Se caracteriza por un pronunciado carácter malteado.</p>
+                            <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
+                                Amargor leve y una terminación ligeramente dulce, contenido alcohólico medio, buen
+                                cuerpo y
+                                excelente sabor.
+                            </p>
+                        </div>
+
+                        <div class="footerDescripcionProducto">
+                            <button class="infoIBUAlcohol">7 IBU</button>
+                            <button class="infoIBUAlcohol">5.8% ABV</button>
+                            <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
+                        </div>
+
+                    </div>
+
+                    <div class="contenedorImagenProductoDerecha">
+                        <img class="imagenProducto" src="images/productos/storm-trooper.png" alt="C3PO">
+                    </div>
+
+                </article>
+
+                <a name="chuwbacca-beer"></a>
+
+                <article class="contenedorCervezaIzquierda">
+
+                    <div class="contenedorImagenProductoIzquierda">
+                        <img class="imagenProducto" src="images/productos/chuwbacca.png" alt="C3PO">
+                    </div>
+
+                    <div class="descripcionProductoIzquierda">
+
+                        <h2 class="nombreCerveza">Chuwbacca</h2>
+                        <h3 class="tipoCerveza">Pale Ale Beer</h3>
+
+                        <div class="parrafoDescripcionProducto">
+                            <p class="parrafo">De graduación alcohólica alta, es un tipo de cerveza preciada y realmente
+                                gustosa. Suele ser natural, ya que no lleva aditivos ni conservantes, sino levadura no
+                                filtrada.
+                            </p>
+                            <p class="parrafo"><span class="tituloParrafos">Aroma: </span>
+                                Con un color algo más claro, el sabor es cremoso y suave, muy puro al ser artesanal y
+                                tan
+                                natural.</p>
+                            <p class="parrafo"><span class="tituloParrafos">Sabor: </span>
+                                Nos ofrece toques cítricos y algo amargos.
+                            </p>
+                        </div>
+
+                        <div class="footerDescripcionProducto">
+                            <button class="infoIBUAlcohol">7 IBU</button>
+                            <button class="infoIBUAlcohol">5.8% ABV</button>
+                            <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </main>
+
+            <%- include('./partials/Footer') %>
 
     </body>
 
