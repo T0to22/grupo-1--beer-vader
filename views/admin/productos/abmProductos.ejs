@@ -1,17 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beer Vader Brewery Co.</title>
-    <link rel="shortcut icon" href="images/logos/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/404.css">
-</head>
+    
+    <%- include('./partials/Head') %>
 
 <body>
 
@@ -49,9 +40,41 @@
 
     <main class="visualPrimaria">
 
-        <h1 class="tituloError">ERROR!</h1>
-        <h2 class="leyendaError">La página que buscas no existe.</h2>
-        <h3 class="fraseError">No subestimes a la fuerza. Darth Vader</h3>
+        <section class="logoPrincipal">
+
+            <div class="contenedorLogoPrincipal">
+                <img class="logoBeerVaderPrincipal" src="images/logos/logo.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="productosPrincipal">
+
+            <div class="grupoLatas">
+
+                <a class="linkProductoPrincipal" href="/productos#c3po-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/c3po.png" alt="C3PO">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#r2d2-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/r2d2.png" alt="R2-D2">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#chuwbacca-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/chuwbacca.png" alt="Chuwbacca">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#hansolo-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/han-solo.png" alt="Han Solo">
+                </a>
+
+                <a class="linkProductoPrincipal" href="/productos#stormtrooper-beer">
+                    <img class="imgProductoPrincipal" src="images/productos/storm-trooper.png" alt="Storm Trooper">
+                </a>
+
+            </div>
+
+        </section>
 
     </main>
 
@@ -124,10 +147,5 @@
 
     </footer>
 
-<<<<<<< HEAD:views/index.html
-    <script src="js/background.js"></script>
-
-=======
->>>>>>> origin/produccion:views/404.html
 </body>
 </html>
