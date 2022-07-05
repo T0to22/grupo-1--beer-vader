@@ -1,59 +1,76 @@
 // Constantes Globales
-const EXPRESS = require('express');
-const APP = EXPRESS();
+const express = require('express');
+const app = express();
 const PATH = require('path');
 const PORT = process.env.PORT || 3000;
 
+//Agrego EJS
+app.set("view engine", "ejs")
+
 // Carpeta Publica
 const PUBLIC_DIR = PATH.join(__dirname, 'public');
-APP.use(EXPRESS.static(PUBLIC_DIR));
+app.use(express.static(PUBLIC_DIR));
 
 // Carpeta de Archivos HTML
 const VIEWS_DIR = PATH.join(__dirname, 'views');
-APP.set('views', VIEWS_DIR);
+app.set('views', VIEWS_DIR);
 
 // Rutas
-// Landing Page
-APP.get('/', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'landing.html'));
-});
+const cartRoute = require("./routes/cartRoute")
+const generalRoute= require("./routes/generalRoute")
+const productsRoute = require("./routes/productsRoute")
+const usersRoute = require("./routes/usersRoute")
 
-APP.get('/inicio', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
-});
+// Landing Page
+// app.get("/", (req, res) => {
+//   res.sendFile(PATH.join(VIEWS_DIR, "landing.html"));
+// });
+app.use("/", generalRoute) 
+
+// Inicio
+// app.get('/inicio', (req, res) => {
+// 	res.sendFile(PATH.join(VIEWS_DIR, 'inicio.html'));
+// });
+app.use("/index", generalRoute) 
 
 // Productos
-APP.get('/productos', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'productos.html'));
-});
+// app.get('/productos', (req, res) => {
+// 	res.sendFile(PATH.join(VIEWS_DIR, 'productos.html'));
+// });
+app.use("/products", productsRoute) 
 
 // Login
-APP.get('/login', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'login.html'));
-});
+// app.get('/login', (req, res) => {
+// 	res.sendFile(PATH.join(VIEWS_DIR, 'login.html'));
+// });
+app.use("/login", usersRoute) 
+
 
 // Registro
-APP.get('/registro', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'registro.html'));
-});
+// app.get('/registro', (req, res) => {
+// 	res.sendFile(PATH.join(VIEWS_DIR, 'registro.html'));
+// });
+app.use("/register", usersRoute) 
 
 // Seleccion de Cantidades de Producto
-APP.get('/addtocart', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'addtocart.html'));
-});
+// app.get('/addtocart', (req, res) => {
+// 	res.sendFile(PATH.join(VIEWS_DIR, 'addtocart.html'));
+// });
+app.use("/addtocart", cartRoute) 
 
 // Checkout Carrito de Compras
-APP.get('/checkout', (req, res) => {
-	res.sendFile(PATH.join(VIEWS_DIR, 'checkout.html'));
-});
+// app.get('/checkout', (req, res) => {
+// 	res.sendFile(PATH.join(VIEWS_DIR, 'checkout.html'));
+// });
+app.use("/checkout", cartRoute) 
 
 //Pagina de Error
-APP.get('*', (req, res) => {
-    res.sendFile(PATH.join(VIEWS_DIR, '404.html'));
-}
-);
+// app.get('*', (req, res) => {
+//     res.sendFile(PATH.join(VIEWS_DIR, '404.html'));
+// });
+app.use("/404", generalRoute) 
 
 // Iniciar Servidor
-APP.listen(PORT, () => {
+app.listen(PORT, () => {
 	console.log(`Servidor corriendo en: http://localhost:${PORT}`);
 });
