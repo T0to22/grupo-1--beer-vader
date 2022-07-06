@@ -6,3 +6,5 @@ const cartController = {
 		res.render('./carrito/checkout');
 	}
 };
+
+module.exports = cartController;
