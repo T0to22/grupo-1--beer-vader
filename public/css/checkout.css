@@ -1,79 +1,79 @@
 /* BACKGROUND */
 body {
-    background: url(/images/backgrounds/checkout.jpg) no-repeat center center fixed;
-    background-size: cover;
-    animation: efectoFadeIn 2s;
+	background: url(/images/backgrounds/checkout.jpg) no-repeat center center fixed;
+	background-size: cover;
+	animation: efectoFadeIn 2s;
 }
 
 @keyframes efectoFadeIn {
-    from {
-        opacity: 0;
-    }
+	from {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
 
 /* MAIN */
 
-.visualPrimaria{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 70vh;
-    align-items: center;
+.visualPrimaria {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 70vh;
+	align-items: center;
 }
 
 /* CHECKOUT */
 .checkout {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 .tablaCheckout {
 	width: 90%;
 	text-align: center;
-	border-collapse:separate; 
+	border-collapse: separate;
 	border-spacing: 0 30px;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 }
 
-.headerTablaCheckout{
+.headerTablaCheckout {
 	font-weight: 400;
 	font-size: 10px;
 }
 
-.contenedorItemCarrito{
+.contenedorItemCarrito {
 	display: flex;
-    justify-content: flex-start;
-    margin-left: 40px;
+	justify-content: flex-start;
+	margin-left: 40px;
 }
 
-.itemCarrito{
+.itemCarrito {
 	display: block;
-    margin: auto 0;
+	margin: auto 0;
 }
 
-.imgCarrito{
+.imgCarrito {
 	max-width: 30px;
 	margin: 0 10px;
 }
 
-.descripcionItemCarrito{
+.descripcionItemCarrito {
 	font-size: 16px;
 	font-weight: 300;
 	margin: 0 10px;
 }
 
-.cantidadItemCarrito{
+.cantidadItemCarrito {
 	font-size: 16px;
 	font-weight: 300;
 	margin: 0 10px;
 	border: none;
 }
 
-.precioItemCarrito{
+.precioItemCarrito {
 	font-size: 16px;
 	font-weight: 300;
 	margin: 0 10px;
@@ -83,23 +83,23 @@ body {
 /* RESUMEN */
 .resumen {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 .tablaResumen {
 	width: 90%;
 	text-align: center;
-	border-collapse:separate; 
+	border-collapse: separate;
 	border-spacing: 0 30px;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 }
 
-.filaSubtotal{
+.filaSubtotal {
 	font-weight: 300;
 }
 
-.filaTotal{
+.filaTotal {
 	font-weight: bold;
 	font-size: 18px;
 }
@@ -128,11 +128,11 @@ body {
 	left: 5px;
 	background-color: #f1f1f1;
 }
-  
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-    
-	.visualPrimaria{
+
+	.visualPrimaria {
 		display: block;
 		height: auto;
 	}

@@ -91,7 +91,7 @@ body {
 
 @media screen and (max-width: 768px) {
 
-    .contenedor{
+    .contenedor {
         display: block;
         height: auto;
         margin: 5%;
@@ -106,7 +106,7 @@ body {
         margin-bottom: 10%;
     }
 
-    .columnaIzquierda img{
+    .columnaIzquierda img {
         height: 300px;
     }
 
@@ -134,7 +134,7 @@ body {
         padding: 10px;
     }
 
-    .btnComprar{
+    .btnComprar {
         margin-top: 0;
         margin-bottom: 10%;
     }
