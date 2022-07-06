@@ -17,7 +17,7 @@ app.set('views', VIEWS_DIR);
 
 // Rutas
 const generalRoute= require("./routes/generalRoute")
-// const productsRoute = require("./routes/productsRoute")
+const productsRoute = require("./routes/productsRoute")
 // const cartRoute = require("./routes/cartRoute")
 // const usersRoute = require("./routes/usersRoute")
 
@@ -39,7 +39,7 @@ app.use("/index", generalRoute)
 // 	res.sendFile(PATH.join(VIEWS_DIR, 'productos.html'));
 // });
 
-// app.use("/productos", productsRoute)
+app.use("/api", productsRoute)
 // app.use("/admin/productos/abmProductos", productsRoute)
 
 // Login

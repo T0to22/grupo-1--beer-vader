@@ -7,7 +7,7 @@ const generalController = {
     },
     error404: (req, res) => {
         res.render ("errores/404", {hojaCSS: "404"});
-    }    
+    }
 }
 
 module.exports = generalController
