@@ -1,9 +1,9 @@
 const cartController = {
 	addtocart: (req, res) => {
-		res.render('./carrito/addtocart');
+		res.render('carrito/addtocart', {hojaCSS: 'addtocart'});
 	},
 	checkout: (req, res) => {
-		res.render('./carrito/checkout');
+		res.render('carrito/checkout', {hojaCSS: 'checkout'});
 	}
 };
 

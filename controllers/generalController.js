@@ -4,9 +4,6 @@ const generalController = {
     },
     index: (req, res) => {
         res.render ('index', {hojaCSS: "inicio"});
-    },
-    error404: (req, res) => {
-        res.render ("errores/404", {hojaCSS: "404"});
     }
 }
 

@@ -22,33 +22,26 @@ const productsRoute = require("./routes/productsRoute")
 const cartRoute = require("./routes/cartRoute")
 const usersRoute = require("./routes/usersRoute")
 
-// Landing Page
+// Landing Page e Inicio
 app.use("/", generalRoute) 
-
-// Inicio
-app.use("/index", generalRoute) 
 
 // Productos
 app.use("/", productsRoute)
-app.use("/admin/productos/abmProductos", productsRoute)
 
-// Login
-app.use("/login", usersRoute)
+// Login y Registro
+app.use("/", usersRoute) 
 
-// Registro
-app.use("/register", usersRoute) 
-
-// Seleccion de Cantidades de Producto
-app.use("/addtocart", cartRoute) 
-
-// Checkout Carrito de Compras
-app.use("/checkout", cartRoute) 
+// Carrito de Compras
+app.use("/", cartRoute) 
 
 //Pagina de Error
 // app.get('*', (req, res) => {
 //     res.sendFile(PATH.join(VIEWS_DIR, '404.html'));
 // });
-app.use("*", generalRoute) 
+
+app.use((req, res, next) => {
+	res.status(404).render('errores/404', {hojaCSS: '404'});
+});
 
 // Iniciar Servidor
 app.listen(PORT, () => {
