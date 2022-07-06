@@ -1,11 +1,13 @@
 const generalController = {
-    index: (req, res) => {
-        res.render ("index")
-    },
     landing: (req, res) => {
-        res.render ("landing")
+        res.render ("landing", {hojaCSS: "landing"});
+    },
+    index: (req, res) => {
+        res.render ('index', {hojaCSS: "inicio"});
     },
     error404: (req, res) => {
-        res.render ("404")
-    }
-} 
+        res.render ("errores/404", {hojaCSS: "404"});
+    }    
+}
+
+module.exports = generalController

@@ -84,11 +84,11 @@ nav {
     opacity: 1;
 }
 
-#botonMenuMovil{
+#botonMenuMovil {
     display: none;
 }
 
-#textoBotonMenuMovil{
+#textoBotonMenuMovil {
     display: none;
 }
 
@@ -102,7 +102,7 @@ nav {
         display: none;
     }
 
-    #fontAwsomeBoton{
+    #fontAwsomeBoton {
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -119,19 +119,19 @@ nav {
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 5px;
-        align-items: center;        
+        align-items: center;
     }
 
-    #textoBotonMenuMovil:hover{
+    #textoBotonMenuMovil:hover {
         background-color: #272727;
         border: solid 1px #f1f1f1;
-        color:#efb810;
+        color: #efb810;
     }
 
     ul {
         display: none;
     }
-    
+
     input:checked~ul {
         display: block;
         text-align: center;

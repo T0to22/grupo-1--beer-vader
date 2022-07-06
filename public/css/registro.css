@@ -15,6 +15,10 @@ body {
     }
 }
 
+footer {
+    display: relative;
+}
+
 main {
 
     align-items: center;
@@ -83,15 +87,15 @@ form {
 }
 
 .btnRegistro:hover {
-	background-color: #1465bb;
-	color: #272727;
+    background-color: #1465bb;
+    color: #272727;
 }
 
 .btnRegistro:active {
-	box-shadow: 0px 0px 0px 0px;
-	top: 5px;
-	left: 5px;
-	background-color: #f1f1f1;
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+    background-color: #f1f1f1;
 }
 
 @media (min-width:769px) {
@@ -114,7 +118,7 @@ form {
     .logo img {
         width: 60%;
         padding: 30px;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 10px;
     }
 

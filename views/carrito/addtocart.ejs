@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/404.css">
+    <link rel="stylesheet" href="css/addtocart.css">
 </head>
+
+<body>
+</header>
+
 
 <body>
 
@@ -47,11 +52,46 @@
 
     </header>
 
-    <main class="visualPrimaria">
+    <main class="contenedor">
 
-        <h1 class="tituloError">ERROR!</h1>
-        <h2 class="leyendaError">La página que buscas no existe.</h2>
-        <h3 class="fraseError">No subestimes a la fuerza. Darth Vader</h3>
+        <section class="columnaIzquierda">
+
+            <img src="images/productos/r2d2.png" alt="">
+
+        </section>
+
+        <section class="columnaDerecha">
+
+            <div class="titulos">
+                <h2 class="titulo">R2-D2 - Kölsch</h2>
+                <h2 class="titulo amarillo">$ 499.99</h2>
+            </div>
+
+            <p class="descripcionProducto">La cerveza Kölsch es una especialidad alemana. Éste estilo esta dentro de las
+                cervezas híbridas claras. Como cerveza híbrida se elabora a fermentación alta como una Ale y se madura a
+                temperaturas bajas como una Lager. Tiene un sutil aroma lupulado y un carácter limpio.</p>
+
+            <div class="selectorCantidad">
+                <label for="cantidadItemCarrito">Cantidad</label>
+                <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <!-- <input id="btnComprar" type="button" name="btnComprar" value="Comprar" class="btnComprar" /> -->
+            <a class="btnComprar" href="/checkout">Comprar</a>
+
+        </section>
+
 
     </main>
 
@@ -79,11 +119,11 @@
             <div class="iconosRedesSociales">
 
                 <a class="linkSocial" href="#">
-                    <img class="imgSocialesFooter" src="images/logos/logo-fb.svg" alt="Facebook">
+                    <img class="imgSocialesFooter" src="images/logos/logo-fb.svg" alt="">
                 </a>
 
                 <a class="linkSocial" href="#">
-                    <img class="imgSocialesFooter" src="images/logos/logo-ig.svg" alt="Instagram">
+                    <img class="imgSocialesFooter" src="images/logos/logo-ig.svg" alt="">
                 </a>
 
             </div>
@@ -98,24 +138,24 @@
 
             <div class="linkProductos">
 
-                <a class="linkProducto" href="/productos#c3po-beer">
-                    <img class="imgProductoFooter" src="images/productos/c3po.png" alt="C3PO">
+                <a class="linkProducto" href="#">
+                    <img class="imgProductoFooter" src="images/productos/c3po.png" alt="">
                 </a>
 
-                <a class="linkProducto" href="/productos#r2d2-beer">
-                    <img class="imgProductoFooter" src="images/productos/r2d2.png" alt="R2-D2">
+                <a class="linkProducto" href="#">
+                    <img class="imgProductoFooter" src="images/productos/r2d2.png" alt="">
                 </a>
 
-                <a class="linkProducto" href="/productos#chuwbacca-beer">
-                    <img class="imgProductoFooter" src="images/productos/chuwbacca.png" alt="Chuwbacca">
+                <a class="linkProducto" href="#">
+                    <img class="imgProductoFooter" src="images/productos/chuwbacca.png" alt="">
                 </a>
 
-                <a class="linkProducto" href="/productos#hansolo-beer">
-                    <img class="imgProductoFooter" src="images/productos/han-solo.png" alt="Han Solo">
+                <a class="linkProducto" href="#">
+                    <img class="imgProductoFooter" src="images/productos/han-solo.png" alt="">
                 </a>
 
-                <a class="linkProducto" href="/productos#stormtrooper-beer">
-                    <img class="imgProductoFooter" src="images/productos/storm-trooper.png" alt="Storm Trooper">
+                <a class="linkProducto" href="#">
+                    <img class="imgProductoFooter" src="images/productos/storm-trooper.png" alt="">
                 </a>
 
             </div>
@@ -124,10 +164,7 @@
 
     </footer>
 
-<<<<<<< HEAD:views/index.html
-    <script src="js/background.js"></script>
 
-=======
->>>>>>> origin/produccion:views/404.html
 </body>
+
 </html>

@@ -172,7 +172,7 @@ footer {
     .contenedorImagenProductoDerecha {
         display: block;
         text-align: center;
-        order:1;
+        order: 1;
     }
 
     .descripcionProductoIzquierda {
@@ -185,7 +185,7 @@ footer {
         display: flex;
         width: 95%;
         margin: auto;
-        order:2;
+        order: 2;
     }
 
     .footerDescripcionProducto {

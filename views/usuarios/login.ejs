@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include('./partials/Head') %>
+
+<body>
+
+    <%- include('./partials/Header') %>
+
+    <main>
+
+        <div class="logoYBox">
+            <section class="logo">
+                <img src="images/logos/logo.png" alt="logo" />
+            </section>
+
+            <form class="form" action="" method="post">
+
+                <form action="submit" method="post">
+
+                    <h1 class="tituloLogin">Iniciar Sesion</h1>
+
+                    <label for="email">
+                        <input class="inputEntradaLogin" type="email" name="email" id="email"
+                            placeholder="tumail@beervader.com" autocomplete="off" require />
+                    </label>
+
+                    <label for="password">
+                        <input class="inputEntradaLogin" type="password" name="password" id="password"
+                            placeholder="Ingresá tu Contraseña" autocomplete="off" require />
+                    </label>
+
+                    <label id="checkRecordarme"><input type="checkbox" id="recordame" value="1"> Recordarme</label>
+
+                    <button class="btnLogin" type="submit">Iniciar Sesion</button>
+
+                    <a class="recuperarPwd" href="#">Recuperar Mi Contraseña</a>
+                </form>
+
+
+        </div>
+    </main>
+
+    <%- include('./partials/Footer') %> 
+
+
+</body>
+
+</html>
