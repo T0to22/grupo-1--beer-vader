@@ -1,8 +1,8 @@
 /* BACKGROUND */
 body {
-    background: url(/images/backgrounds/productos.jpg) no-repeat center center fixed;
+    background: url(/images/backgrounds/abmProductos.jpg) no-repeat center center fixed;
     background-size: cover;
-    animation: efectoFadeIn 2s;
+    animation: efectoFadeIn 1s;
 }
 
 @keyframes efectoFadeIn {
@@ -15,93 +15,131 @@ body {
     }
 }
 
-footer {
+footer{
     position: relative;
 }
 
 
+main {
+
+    align-items: center;
+}
+
+.tituloAltaProducto {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
 /* MAIN */
-.visualPrimaria {
+.visualPrimaria{
     display: block;
     align-items: center;
 }
 
-/* ARTICULOS */
-.contenedorCervezaIzquierda {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-gap: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
+.altaProductos{
+    margin-top: 10px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
     border-radius: 10px;
-    margin: 50px;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
 
-.contenedorCervezaDerecha {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    grid-gap: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    margin: 50px;
-    align-items: center;
-}
-
-.contenedorImagenProductoIzquierda {
-    display: flex;
-    justify-content: flex-end;
-    height: 70%;
-}
-
-.contenedorImagenProductoDerecha {
-    display: flex;
-    justify-content: flex-start;
-    height: 70%;
-}
-
-.descripcionProductoIzquierda {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20%;
-}
-
-.descripcionProductoDerecha {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20%;
-}
-
-.nombreCerveza {
+.inputAltaProducto {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin: 10px auto;
     text-align: center;
 }
 
-.tipoCerveza {
-    text-align: center;
-    color: #efb810;
+.stock{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
 }
 
-.parrafoDescripcionProducto {
+#cantidadStockInicial {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	border: none;
+}
+
+#selectCantidadStockInicial{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	border: none;
+}
+
+.itemCarrito {
+	display: block;
+	margin: auto 0;
+}
+
+.descripcionItemCarrito {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+}
+
+.cantidadItemCarrito {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	border: none;
+}
+
+.precioItemCarrito {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	border: none;
+}
+
+#precioStock{
+    text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	border: none;
+}
+
+.inputAltaProductoDescripcion {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 90%;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btnAltaProducto {
+    display: block;
+    font-size: 16px;
     font-weight: 300;
-    text-align: justify;
-    margin: 10px;
-}
-
-.parrafo {
-    margin: 5px;
-}
-
-.tituloParrafos {
-    font-weight: bold;
-}
-
-.footerDescripcionProducto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-}
-
-.infoIBUAlcohol {
-    font-size: 14px;
     letter-spacing: 2px;
     color: #272727;
     cursor: pointer;
@@ -110,86 +148,84 @@ footer {
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     background-color: #efb810;
     width: 80%;
+    margin: 0 auto 20px;
 }
 
-.addToCard {
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: #272727;
-    cursor: pointer;
-    border: 3px solid;
-    padding: 0.25em 0.5em;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-    background-color: #efb810;
-    width: 80%;
-    text-decoration: none;
-    text-align: center;
-}
-
-.addToCard:hover {
+.btnAltaProducto:hover {
     background-color: #1465bb;
     color: #272727;
 }
 
-.addToCard:active {
+.btnAltaProducto:active {
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
     background-color: #f1f1f1;
 }
 
+/* CHECKOUT */
+.bmProductos {
+	display: flex;
+	justify-content: center;
+    margin-top: 10px;
+}
+
+.tablaCheckout {
+	width: 90%;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 0 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.headerTablaCheckout {
+	font-weight: 400;
+	font-size: 10px;
+}
+
+.contenedorItemCarrito {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 40px;
+}
+
+.itemCarrito {
+	display: block;
+	margin: auto 0;
+}
+
+.imgCarrito {
+	max-width: 30px;
+	margin: 0 10px;
+}
+
+.descripcionItemCarrito {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+}
+
+.cantidadItemCarrito {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	border: none;
+}
+
+.precioItemCarrito {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 10px;
+	border: none;
+}
+  
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
+    
+	.visualPrimaria{
+		display: block;
+		height: auto;
+	}
 
-    .visualPrimaria {
-        display: block;
-        height: auto;
-    }
-
-    .imagenProducto {
-        margin: 50px 0px 10px;
-        height: 300px;
-    }
-
-    /* ARTICULOS */
-    .contenedorCervezaIzquierda {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 10px;
-    }
-
-    .contenedorCervezaDerecha {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 10px;
-    }
-
-    .contenedorImagenProductoIzquierda {
-        display: block;
-        text-align: center;
-    }
-
-    .contenedorImagenProductoDerecha {
-        display: block;
-        text-align: center;
-        order: 1;
-    }
-
-    .descripcionProductoIzquierda {
-        display: flex;
-        width: 95%;
-        margin: auto;
-    }
-
-    .descripcionProductoDerecha {
-        display: flex;
-        width: 95%;
-        margin: auto;
-        order: 2;
-    }
-
-    .footerDescripcionProducto {
-        justify-items: center;
-        margin-bottom: 50px;
-    }
 }
