@@ -108,6 +108,12 @@ form {
 	border: none;
 }
 
+.grupoBotonesDeAccion {
+    display:flex;
+    
+
+}
+
 .precioItemCarrito {
 	font-size: 16px;
 	font-weight: 300;
