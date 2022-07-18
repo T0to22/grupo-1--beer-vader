@@ -5,6 +5,14 @@ const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 const PATH = require('path');
 
+// Agrego methodOverride
+const methodOverride = require('method-override');
+app.use(methodOverride("_method"));
+
+// Agrego JSON 
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
 //Agrego EJS
 app.set("view engine", "ejs")
 
