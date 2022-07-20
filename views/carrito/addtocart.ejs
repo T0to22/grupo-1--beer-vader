@@ -15,20 +15,18 @@
 
         <section class="columnaIzquierda">
 
-            <img src="images/productos/r2d2.png" alt="">
+            <img src="/images/productos/<%= producto.imagen %>">
 
         </section>
 
         <section class="columnaDerecha">
 
             <div class="titulos">
-                <h2 class="titulo">R2-D2 - Kölsch</h2>
-                <h2 class="titulo amarillo">$ 499.99</h2>
+                <h2 class="titulo"><%= producto.nombre %> <%= producto.tipo %></h2>
+                <h2 class="titulo amarillo">$ <%= producto.precio %></h2>
             </div>
 
-            <p class="descripcionProducto">La cerveza Kölsch es una especialidad alemana. Éste estilo esta dentro de las
-                cervezas híbridas claras. Como cerveza híbrida se elabora a fermentación alta como una Ale y se madura a
-                temperaturas bajas como una Lager. Tiene un sutil aroma lupulado y un carácter limpio.</p>
+            <p class="descripcionProducto"><%= producto.descripcion %></p>
 
             <div class="selectorCantidad">
                 <label for="cantidadItemCarrito">Cantidad</label>
