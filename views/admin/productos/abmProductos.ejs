@@ -12,7 +12,7 @@
 
         <section class="altaProductos">
 
-            <form action="submit" method="post">
+            <form action="/nuevoProducto" method="post" enctype="multipart/form-data">
 
                 <h1 class="tituloAltaProducto">Alta de Producto</h1>
 
@@ -24,40 +24,46 @@
                 <textarea class="inputAltaProductoDescripcion" name="descripcionProducto" id="descripcionProducto"
                     placeholder="Descripcion del producto" cols="20" rows="5" autocomplete="off" require></textarea>
 
-                <label for="precioProducto">
-                    <input class="inputAltaProducto" type="number" name="precioProducto" id="precioProducto"
-                        placeholder="Precio de Venta Publico (PVP)" require />
-                </label>
+                <div class="contenedorFotoYPrecio">
 
-                <div class="stock">
+                    <div class="contenedorFileInput">
+                        <input class="fileInput" type="file" name="file" /><i
+                            class="fa-solid fa-file-arrow-up iconoFileInput"></i>
+                    </div>
 
-                    <label for="cantidadStockInicial" id="cantidadStockInicial">Stock</label>
-                    <select name="cantidadStockInicial" id="selectCantidadStockInicial">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
+                    <input type="number" name="precioProducto" id="precioProducto" placeholder="PVP" require />
+
+                    <label for="cantidadStockInicial" id="cantidadStockInicialLabel">Stock
+
+                        <select name="cantidadStockInicial" class="selectCantidadStockInicial">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                    </label>
+
                 </div>
 
                 <button class="btnAltaProducto" type="submit">Crear Producto</button>
-            </form>
 
+            </form>
 
         </section>
 
         <section class="bmProductos">
 
-            <table class="tablaCheckout">
+            <table class="tablaProductos">
 
                 <thead>
-                    <tr class="headerTablaCheckout">
+                    <tr class="headerTablaProductos">
                         <th style="width: 25%;">Item</th>
                         <th style="width: 25%;">Precio</th>
                         <th style="width: 25%;">Stock</th>
@@ -67,21 +73,22 @@
 
                 <tbody>
 
-                    <tr class="filaCarrito">
+                    <tr class="filaProducto">
                         <td>
-                            <div class="contenedorItemCarrito">
+                            <div class="contenedorItemProducto">
                                 <div>
-                                    <img class="imgCarrito" src="/images/productos/han-solo.png" alt="Han Solo">
+                                    <img class="imgProducto" src="/images/productos/han-solo.png" alt="Han Solo">
                                 </div>
-                                <div class="itemCarrito">
-                                    <p class="descripcionItemCarrito">Helles Han Solo</p>
+                                <div class="itemProducto">
+                                    <p class="descripcionItemProducto">Helles Han Solo</p>
                                 </div>
                             </div>
                         </td>
-                        <td class="precioItemCarrito">$ <input type="number" name="precioStock" id="precioStock" value="10"></td>
+                        <td class="precioItemProducto">$ <input type="number" name="precioStock" id="precioStock"
+                                value="10"></td>
 
-                        <td class="cantidadItemCarrito">
-                            <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
+                        <td class="cantidadItemProducto1">
+                            <select name="cantidadItemProducto" class="cantidadItemProducto">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -94,43 +101,23 @@
                                 <option value="10">10</option>
                             </select>
                         </td>
-                        <td>
-                            <div class="grupoBotonesDeAccion">
-                                <form action="/" method="post"><button type="submit"><i class="fa-solid fa-pencil"></i></button></form>
-                                <form action="" method="post"><button type="submit"><i class="fa-solid fa-trash-can"></i></button></form>
-                            </div>
-                                    
-                        
-                        
-                        </td>
-                    </tr>
 
-                    <tr class="filaCarrito">
                         <td>
-                            <div class="contenedorItemCarrito">
-                                <div>
-                                    <img class="imgCarrito" src="/images/productos/storm-trooper.png"
-                                        alt="Storm Trooper">
-                                </div>
-                                <div class="itemCarrito">
-                                    <p class="descripcionItemCarrito">Scottish Storm Trooper</p>
-                                </div>
+
+                            <div class="grupoBotonesDeAccion">
+                                <form class="formAcciones" action="" method="post">
+                                    <button class="btnActualizarProducto" type="submit">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                </form>
+
+                                <form class="formAcciones" action="" method="post">
+                                    <button class="btnEliminarProducto" type="submit">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </form>
                             </div>
-                        </td>
-                        <td class="precioItemCarrito">$ <input type="number" name="precioStock" id="precioStock" value="10"></td>
-                        <td class="cantidadItemCarrito">
-                            <select name="cantidadItemCarrito" id="cantidadItemCarrito" class="cantidadItemCarrito">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option selected value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
+
                         </td>
                     </tr>
 
@@ -139,7 +126,6 @@
             </table>
 
         </section>
-
 
     </main>
 

@@ -46,9 +46,9 @@
                 </div>
 
                 <div class="footerDescripcionProducto">
-                    <button class="infoIBUAlcohol"><%=listaDeProductos[i].ibu%></button>
-                    <button class="infoIBUAlcohol">5.8% ABV</button>
-                    <a class="addToCard" href="/addtocart">Añadir al Carrito</a>
+                    <button class="infoIBUAlcohol"><%=listaDeProductos[i].ibu%> IBU</button>
+                    <button class="infoIBUAlcohol"><%=listaDeProductos[i].abv%> ABV</button>
+                    <a class="addToCard" href="/addtocart/<%= listaDeProductos[i].id %>">Añadir al Carrito</a>
                 </div>
 
             </div>

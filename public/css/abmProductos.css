@@ -37,11 +37,8 @@ main {
     align-items: center;
 }
 
-.altaProductos{
-    margin-top: 10px;
-}
-
-form {
+.altaProductos {
+    margin-top: 30px !important;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 10px;
@@ -64,30 +61,80 @@ form {
     text-align: center;
 }
 
+.contenedorFotoYPrecio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
+
+.contenedorFileInput {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    margin: auto;
+    text-align: center;
+}
+
+.fileInput {
+    cursor: pointer;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    font-size:50px;
+    opacity: 0;
+}
+
+#precioProducto {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    /* width: 90%; */
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.iconoFileInput{
+    margin-top: 5px;
+}
+
 .stock{
-    display: flex;
-    justify-content: center;
-    margin: 10px auto;
+    display: block;
+    text-align: center;
 }
 
-#cantidadStockInicial {
-    display: flex;
-    justify-content: center;
-    margin: 10px auto;
-	font-size: 16px;
-	font-weight: 300;
-	margin: 0 10px;
-	border: none;
+#cantidadStockInicialLabel{
+    text-align: center;
 }
 
-#selectCantidadStockInicial{
-    display: flex;
-    justify-content: center;
-    margin: 10px auto;
-	font-size: 16px;
-	font-weight: 300;
-	margin: 0 10px;
-	border: none;
+.selectCantidadStockInicial {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    margin: 10px;
+    text-align: center;
 }
 
 .itemCarrito {
@@ -106,12 +153,6 @@ form {
 	font-weight: 300;
 	margin: 0 10px;
 	border: none;
-}
-
-.grupoBotonesDeAccion {
-    display:flex;
-    
-
 }
 
 .precioItemCarrito {
@@ -169,14 +210,14 @@ form {
     background-color: #f1f1f1;
 }
 
-/* CHECKOUT */
+/* GRID */
 .bmProductos {
 	display: flex;
 	justify-content: center;
     margin-top: 10px;
 }
 
-.tablaCheckout {
+.tablaProductos {
 	width: 90%;
 	text-align: center;
 	border-collapse: separate;
@@ -185,47 +226,121 @@ form {
 	border-radius: 10px;
 }
 
-.headerTablaCheckout {
+.headerTablaProductos {
 	font-weight: 400;
-	font-size: 10px;
+	font-size: 16px;
 }
 
-.contenedorItemCarrito {
+.contenedorItemProducto {
 	display: flex;
 	justify-content: flex-start;
 	margin-left: 40px;
 }
 
-.itemCarrito {
+.imgProducto{
+    max-width: 30px;
+    margin: 0 10px;
+}
+
+.itemProducto {
 	display: block;
 	margin: auto 0;
 }
 
-.imgCarrito {
-	max-width: 30px;
-	margin: 0 10px;
+#precioStock {
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: center;
 }
 
-.descripcionItemCarrito {
+#precioStock {
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.descripcionItemProducto {
 	font-size: 16px;
 	font-weight: 300;
 	margin: 0 10px;
 }
 
-.cantidadItemCarrito {
+.precioItemProducto {
 	font-size: 16px;
 	font-weight: 300;
 	margin: 0 10px;
 	border: none;
 }
 
-.precioItemCarrito {
+.cantidadItemProducto {
 	font-size: 16px;
 	font-weight: 300;
 	margin: 0 10px;
 	border: none;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: #f1f1f1;
+    margin: 10px auto;
+    text-align: center;
 }
-  
+
+/* BOTONES DE ACCION DE CADA FILA DE LA TABLA */
+.grupoBotonesDeAccion {
+    display:flex;
+    justify-content: center;
+}
+
+.formAcciones{
+    width: 100px;
+}
+
+.btnActualizarProducto{
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #272727;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    background-color: green;
+    width: 80%;
+}
+
+.btnEliminarProducto{
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #272727;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    background-color: red;
+    width: 80%;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     
@@ -233,5 +348,9 @@ form {
 		display: block;
 		height: auto;
 	}
+
+    footer{
+        position: relative;
+    }
 
 }
