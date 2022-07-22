@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include('../partials/Head') %>
+
+<body>
+
+    <%- include('../partials/Header') %>
+
+    <main class="visualPrimaria">
+
+        <h1 class="tituloError"><%= error.titulo %></h1>
+        <h2 class="leyendaError"><%= error.mensaje %></h2>
+        <h3 class="fraseError"><%= error.descripcion %></h3>
+        <button class="botonAtras" onclick="history.back()">Volver Atras</button>
+
+    </main>
+
+</body>
+
+</html>

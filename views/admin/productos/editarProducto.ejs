@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <%- include('../../partials/Head.ejs') %>
+
+<body>
+
+    <%- include('../../partials/Header') %>
+
+    <main class="visualPrimaria">
+
+        <section class="altaProductos">
+
+            <form class="formAcciones" action="/admin/productos/guardarProducto/<%= producto.id %>?_method=PUT" method="post" enctype="multipart/form-data">
+
+                <h1 class="tituloAltaProducto">Modificar Producto</h1>
+
+                <div class="contenedorDatosProducto">
+
+                    <label class="labelInputNuevoProducto" for="nombreProducto">Nombre
+                        <input class="inputAltaProducto" type="text" name="nombreProducto"
+                            placeholder="Nombre de la Cerveza" value="<%= producto.nombre %>" autocomplete="off" require />
+                    </label>
+
+                    <label class="labelInputNuevoProducto" for="tipoProducto">Tipo
+                        <input class="inputAltaProducto" type="text" name="tipoProducto" placeholder="Tipo de Cerveza"
+                            autocomplete="off" value="<%= producto.tipo %>" require />
+                    </label>
+
+                    <label class="labelInputNuevoProducto" for="ibuProducto">IBU
+                        <input class="inputAltaProducto" type="number" name="ibuProducto" placeholder="5"
+                            autocomplete="off" value="<%= producto.ibu %>" require />
+                    </label>
+
+                    <label class="labelInputNuevoProducto" for="abvProducto">ABV
+                        <input class="inputAltaProducto" type="number" name="abvProducto" placeholder="5"
+                            autocomplete="off" value="<%= producto.abv %>" require />
+                    </label>
+
+                </div>
+
+                <textarea class="inputAltaProductoTextArea" name="aromaProducto" id="descripcionProducto"
+                    placeholder="Aroma de la Cerveza" cols="20" rows="3" autocomplete="off" require><%= producto.aroma %></textarea>
+
+                <textarea class="inputAltaProductoTextArea" name="saborProducto" id="descripcionProducto"
+                    placeholder="Sabor de la Cerveza" cols="20" rows="3" autocomplete="off" require><%= producto.sabor %></textarea>
+
+                <textarea class="inputAltaProductoTextArea" name="descripcionProducto" id="descripcionProducto"
+                    placeholder="Descripcion del producto" cols="20" rows="5" autocomplete="off" require><%= producto.descripcion %></textarea>
+
+                <div class="contenedorFotoYPrecio">
+
+                    <div class="contenedorFileInput">
+                        <input class="fileInput" type="file" name="imagen" /><i
+                            class="fa-solid fa-file-arrow-up iconoFileInput"></i>
+                    </div>
+
+                    <label for="precioProducto" id="labelPrecioProducto">Precio
+                        <input type="number" name="precioProducto" id="precioProducto" placeholder="PVP"
+                            value="<%= producto.precio %>" require />
+                    </label>
+
+                    <label for="cantidadStockInicial" id="cantidadStockInicialLabel">Stock
+
+                        <select name="cantidadItemProducto" class="cantidadItemProducto">
+                            <option value="1" <%= producto.stock === 1 ? 'selected' : '' %>>1</option>
+                            <option value="2" <%= producto.stock === 2 ? 'selected' : '' %>>2</option>
+                            <option value="3" <%= producto.stock === 3 ? 'selected' : '' %>>3</option>
+                            <option value="4" <%= producto.stock === 4 ? 'selected' : '' %>>4</option>
+                            <option value="5" <%= producto.stock === 5 ? 'selected' : '' %>>5</option>
+                            <option value="6" <%= producto.stock === 6 ? 'selected' : '' %>>6</option>
+                            <option value="7" <%= producto.stock === 7 ? 'selected' : '' %>>7</option>
+                            <option value="8" <%= producto.stock === 8 ? 'selected' : '' %>>8</option>
+                            <option value="9" <%= producto.stock === 9 ? 'selected' : '' %>>9</option>
+                            <option value="10" <%= producto.stock === 10 ? 'selected' : '' %>>10</option>
+                        </select>
+
+                    </label>
+
+                </div>
+
+                <button class="btnAltaProducto" type="submit">Guardar Cambios</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -8,8 +8,8 @@ const listaDeProductosObjeto = JSON.parse(fs.readFileSync(productosJSON, 'utf-8'
 const cartController = {
 	addtocart: (req, res) => {
 
-		let productId = req.params.id;
-		let producto = listaDeProductosObjeto.find((producto) => producto.id == productId);
+		let productoId = req.params.id;
+		let producto = listaDeProductosObjeto.find((producto) => producto.id == productoId);
 		res.render('carrito/addtocart', {hojaCSS: 'addtocart', producto: producto, listaDeProductos: listaDeProductosObjeto});
 	},
 	checkout: (req, res) => {

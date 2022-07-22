@@ -22,36 +22,32 @@
                         <input class="inputAltaProducto" type="text" name="nombreProducto"
                             placeholder="Nombre de la Cerveza" autocomplete="off" require />
                     </label>
-                    
+
                     <label class="labelInputNuevoProducto" for="tipoProducto">Tipo
-                        <input class="inputAltaProducto" type="text" name="tipoProducto"
-                            placeholder="Tipo de Cerveza" autocomplete="off" require />
-                    </label>
-                    
-                    <label class="labelInputNuevoProducto" for="aromaProducto">Aroma
-                        <input class="inputAltaProducto" type="text" name="aromaProducto"
-                            placeholder="Aroma de la Cerveza" autocomplete="off" require />
-                    </label>
-                    
-                    <label class="labelInputNuevoProducto" for="saborProducto">Sabor
-                        <input class="inputAltaProducto" type="text" name="saborProducto"
-                            placeholder="Sabor de la Cerveza" autocomplete="off" require />
+                        <input class="inputAltaProducto" type="text" name="tipoProducto" placeholder="Tipo de Cerveza"
+                            autocomplete="off" require />
                     </label>
 
                     <label class="labelInputNuevoProducto" for="ibuProducto">IBU
-                        <input class="inputAltaProducto" type="number" name="ibuProducto"
-                            placeholder="5" autocomplete="off" require />
+                        <input class="inputAltaProducto" type="number" name="ibuProducto" placeholder="5"
+                            autocomplete="off" require />
                     </label>
 
                     <label class="labelInputNuevoProducto" for="abvProducto">ABV
-                        <input class="inputAltaProducto" type="number" name="abvProducto"
-                            placeholder="5" autocomplete="off" require />
+                        <input class="inputAltaProducto" type="number" name="abvProducto" placeholder="5"
+                            autocomplete="off" require />
                     </label>
 
                 </div>
 
-                <textarea class="inputAltaProductoDescripcion" name="descripcionProducto" id="descripcionProducto"
-                    placeholder="Descripcion del producto" cols="20" rows="5" autocomplete="off" require></textarea>
+                <textarea class="inputAltaProductoTextArea" name="aromaProducto" id="descripcionProducto"
+                    placeholder="Aroma de la Cerveza" cols="20" rows="3" autocomplete="off" require></textarea>
+
+                <textarea class="inputAltaProductoTextArea" name="saborProducto" id="descripcionProducto"
+                    placeholder="Sabor de la Cerveza" cols="20" rows="3" autocomplete="off" require></textarea>
+
+                <textarea class="inputAltaProductoTextArea" name="descripcionProducto" id="descripcionProducto"
+                    placeholder="Descripcion de la Cerveza" cols="20" rows="3" autocomplete="off" require></textarea>
 
                 <div class="contenedorFotoYPrecio">
 
@@ -93,10 +89,17 @@
 
                 <thead>
                     <tr class="headerTablaProductos">
-                        <th style="width: 25%;">Item</th>
-                        <th style="width: 25%;">Precio</th>
-                        <th style="width: 25%;">Stock</th>
-                        <th style="width: 25%;">Acciones</th>
+                        <th style="width: 10%;">Imagen</th>
+                        <th style="width: 5%;">Nombre</th>
+                        <th style="width: 5%;">Tipo</th>
+                        <th style="width: 15%;">Aroma</th>
+                        <th style="width: 15%;">Sabor</th>
+                        <th style="width: 20%;">Descripcion</th>
+                        <th style="width: 3%;">IBU</th>
+                        <th style="width: 3%;">ABV</th>
+                        <th style="width: 8%;">Precio</th>
+                        <th style="width: 6%;">Stock</th>
+                        <th style="width: 5%;">Acciones</th>
                     </tr>
                 </thead>
 
@@ -105,40 +108,63 @@
                     <% for( let i = 0; i < listaDeProductos.length; i++ ) { %>
 
                     <tr class="filaProducto">
+                        
+                        <!-- Imagen -->
                         <td>
-                            <div class="contenedorItemProducto">
-                                <div>
-                                    <img class="imgProducto" src="/images/productos/<%= listaDeProductos[i].imagen %>">
-                                </div>
-                                <div class="itemProducto">
-                                    <p class="descripcionItemProducto"><%= listaDeProductos[i].nombre %> <%= listaDeProductos[i].tipo %></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="precioItemProducto">$ <input type="number" name="precioStock" id="precioStock"
-                                value="<%= listaDeProductos[i].precio %>"></td>
-
-                        <td class="cantidadItemProducto1">
-
-                            <select name="cantidadItemProducto" class="cantidadItemProducto">
-                                <option value="1" <%= listaDeProductos[i].stock === 1 ? 'selected' : '' %>>1</option>
-                                <option value="2" <%= listaDeProductos[i].stock === 2 ? 'selected' : '' %>>2</option>
-                                <option value="3" <%= listaDeProductos[i].stock === 3 ? 'selected' : '' %>>3</option>
-                                <option value="4" <%= listaDeProductos[i].stock === 4 ? 'selected' : '' %>>4</option>
-                                <option value="5" <%= listaDeProductos[i].stock === 5 ? 'selected' : '' %>>5</option>
-                                <option value="6" <%= listaDeProductos[i].stock === 6 ? 'selected' : '' %>>6</option>
-                                <option value="7" <%= listaDeProductos[i].stock === 7 ? 'selected' : '' %>>7</option>
-                                <option value="8" <%= listaDeProductos[i].stock === 8 ? 'selected' : '' %>>8</option>
-                                <option value="9" <%= listaDeProductos[i].stock === 9 ? 'selected' : '' %>>9</option>
-                                <option value="10" <%= listaDeProductos[i].stock === 10 ? 'selected' : '' %>>10</option>
-                            </select>
+                            <img class="imgProducto" src="/images/productos/<%= listaDeProductos[i].imagen %>">
                         </td>
 
+                        <!-- Nombre -->
+                        <td>
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].nombre %></p>
+                        </td>
+
+                        <!-- Tipo -->
+                        <td>
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].tipo %></p>
+                        </td>
+
+                        <!-- Aroma -->
+                        <td>
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].aroma %></p>
+                        </td>
+
+                        <!-- Sabor -->
+                        <td>
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].sabor %></p>
+                        </td>
+
+                        <!-- Descripcion -->
+                        <td>
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].descripcion %></p>
+                        </td>
+
+                        <!-- IBU -->
+                        <td>
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].ibu %></p>
+                        </td>
+
+                        <!-- ABV -->
+                        <td>
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].abv %></p>
+                        </td>
+
+                        <!-- Precio -->
+                        <td class="precioItemProducto">
+                            <p class="descripcionItemProducto">$<%= listaDeProductos[i].precio %></p>
+                        </td>
+
+                        <!-- Stock -->
+                        <td class="contenedorCantidadItemProducto">
+                            <p class="descripcionItemProducto"><%= listaDeProductos[i].stock%> u</p>
+                        </td>
+
+                        <!-- Acciones -->
                         <td>
 
                             <div class="grupoBotonesDeAccion">
 
-                                <form class="formAcciones" action="" method="post">
+                                <form class="formAcciones" action="/admin/productos/editarProducto/<%= listaDeProductos[i].id %>" method="get">
                                     <button class="btnActualizarProducto" type="submit">
                                         <i class="fa-solid fa-pencil"></i>
                                     </button>
@@ -157,7 +183,7 @@
 
                     <% } %>
 
-                    </tbody>
+                </tbody>
 
             </table>
 
