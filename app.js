@@ -42,13 +42,13 @@ app.use("/", usersRoute)
 // Carrito de Compras
 app.use("/", cartRoute) 
 
-//Pagina de Error
-// app.get('*', (req, res) => {
-//     res.sendFile(PATH.join(VIEWS_DIR, '404.html'));
-// });
+//Pagina de Error con JSON para los Datos
+const fs = require('fs');
+const productosJSON = PATH.resolve(__dirname, 'data/products.json');
+const listaDeProductosObjeto = JSON.parse(fs.readFileSync(productosJSON, 'utf-8'));
 
 app.use((req, res, next) => {
-	res.status(404).render('errores/404', {hojaCSS: '404'});
+	res.status(404).render('errores/404', { hojaCSS: '404', listaDeProductos: listaDeProductosObjeto });
 });
 
 // Iniciar Servidor

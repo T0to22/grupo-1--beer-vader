@@ -9,6 +9,9 @@ router.get('/productos', productsController.listaProductos)
 router.get('/admin/productos/abmProductos', productsController.abmProductos)
 
 // Alta de productos
-router.get('/nuevoProducto', upload.single('image'), productsController.nuevoProducto)
+router.post('/admin/productos/nuevoProducto', upload.single('imagen'), productsController.nuevoProducto)
+
+//Eliminar productos
+router.delete('/admin/productos/eliminarProducto/:id', productsController.eliminarProducto)
 
 module.exports = router

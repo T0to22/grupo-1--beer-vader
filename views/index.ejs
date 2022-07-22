@@ -22,26 +22,14 @@
 
             <div class="grupoLatas">
 
-                <a class="linkProductoPrincipal" href="/productos#c3po-beer">
-                    <img class="imgProductoPrincipal" src="images/productos/c3po.png" alt="C3PO">
+                <% for( let i = 0; i < listaDeProductos.length; i++ ) { %>
+
+                <a class="linkProductoPrincipal" href="/productos#<%= listaDeProductos[i].ancla %> ">
+                    <img class="imgProductoPrincipal" src="images/productos/<%= listaDeProductos[i].imagen %>">
                 </a>
 
-                <a class="linkProductoPrincipal" href="/productos#r2d2-beer">
-                    <img class="imgProductoPrincipal" src="images/productos/r2d2.png" alt="R2-D2">
-                </a>
-
-                <a class="linkProductoPrincipal" href="/productos#chuwbacca-beer">
-                    <img class="imgProductoPrincipal" src="images/productos/chuwbacca.png" alt="Chuwbacca">
-                </a>
-
-                <a class="linkProductoPrincipal" href="/productos#hansolo-beer">
-                    <img class="imgProductoPrincipal" src="images/productos/han-solo.png" alt="Han Solo">
-                </a>
-
-                <a class="linkProductoPrincipal" href="/productos#stormtrooper-beer">
-                    <img class="imgProductoPrincipal" src="images/productos/storm-trooper.png" alt="Storm Trooper">
-                </a>
-
+                <% } %>
+                
             </div>
 
         </section>

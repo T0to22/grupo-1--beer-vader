@@ -12,14 +12,43 @@
 
         <section class="altaProductos">
 
-            <form action="/nuevoProducto" method="post" enctype="multipart/form-data">
+            <form action="/admin/productos/nuevoProducto" method="post" enctype="multipart/form-data">
 
                 <h1 class="tituloAltaProducto">Alta de Producto</h1>
 
-                <label for="nombreProducto">
-                    <input class="inputAltaProducto" type="text" name="nombreProducto" placeholder="Nombre del Producto"
-                        autocomplete="off" require />
-                </label>
+                <div class="contenedorDatosProducto">
+
+                    <label class="labelInputNuevoProducto" for="nombreProducto">Nombre
+                        <input class="inputAltaProducto" type="text" name="nombreProducto"
+                            placeholder="Nombre de la Cerveza" autocomplete="off" require />
+                    </label>
+                    
+                    <label class="labelInputNuevoProducto" for="tipoProducto">Tipo
+                        <input class="inputAltaProducto" type="text" name="tipoProducto"
+                            placeholder="Tipo de Cerveza" autocomplete="off" require />
+                    </label>
+                    
+                    <label class="labelInputNuevoProducto" for="aromaProducto">Aroma
+                        <input class="inputAltaProducto" type="text" name="aromaProducto"
+                            placeholder="Aroma de la Cerveza" autocomplete="off" require />
+                    </label>
+                    
+                    <label class="labelInputNuevoProducto" for="saborProducto">Sabor
+                        <input class="inputAltaProducto" type="text" name="saborProducto"
+                            placeholder="Sabor de la Cerveza" autocomplete="off" require />
+                    </label>
+
+                    <label class="labelInputNuevoProducto" for="ibuProducto">IBU
+                        <input class="inputAltaProducto" type="number" name="ibuProducto"
+                            placeholder="5" autocomplete="off" require />
+                    </label>
+
+                    <label class="labelInputNuevoProducto" for="abvProducto">ABV
+                        <input class="inputAltaProducto" type="number" name="abvProducto"
+                            placeholder="5" autocomplete="off" require />
+                    </label>
+
+                </div>
 
                 <textarea class="inputAltaProductoDescripcion" name="descripcionProducto" id="descripcionProducto"
                     placeholder="Descripcion del producto" cols="20" rows="5" autocomplete="off" require></textarea>
@@ -27,7 +56,7 @@
                 <div class="contenedorFotoYPrecio">
 
                     <div class="contenedorFileInput">
-                        <input class="fileInput" type="file" name="file" /><i
+                        <input class="fileInput" type="file" name="imagen" /><i
                             class="fa-solid fa-file-arrow-up iconoFileInput"></i>
                     </div>
 
@@ -73,55 +102,62 @@
 
                 <tbody>
 
+                    <% for( let i = 0; i < listaDeProductos.length; i++ ) { %>
+
                     <tr class="filaProducto">
                         <td>
                             <div class="contenedorItemProducto">
                                 <div>
-                                    <img class="imgProducto" src="/images/productos/han-solo.png" alt="Han Solo">
+                                    <img class="imgProducto" src="/images/productos/<%= listaDeProductos[i].imagen %>">
                                 </div>
                                 <div class="itemProducto">
-                                    <p class="descripcionItemProducto">Helles Han Solo</p>
+                                    <p class="descripcionItemProducto"><%= listaDeProductos[i].nombre %> <%= listaDeProductos[i].tipo %></p>
                                 </div>
                             </div>
                         </td>
                         <td class="precioItemProducto">$ <input type="number" name="precioStock" id="precioStock"
-                                value="10"></td>
+                                value="<%= listaDeProductos[i].precio %>"></td>
 
                         <td class="cantidadItemProducto1">
+
                             <select name="cantidadItemProducto" class="cantidadItemProducto">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
+                                <option value="1" <%= listaDeProductos[i].stock === 1 ? 'selected' : '' %>>1</option>
+                                <option value="2" <%= listaDeProductos[i].stock === 2 ? 'selected' : '' %>>2</option>
+                                <option value="3" <%= listaDeProductos[i].stock === 3 ? 'selected' : '' %>>3</option>
+                                <option value="4" <%= listaDeProductos[i].stock === 4 ? 'selected' : '' %>>4</option>
+                                <option value="5" <%= listaDeProductos[i].stock === 5 ? 'selected' : '' %>>5</option>
+                                <option value="6" <%= listaDeProductos[i].stock === 6 ? 'selected' : '' %>>6</option>
+                                <option value="7" <%= listaDeProductos[i].stock === 7 ? 'selected' : '' %>>7</option>
+                                <option value="8" <%= listaDeProductos[i].stock === 8 ? 'selected' : '' %>>8</option>
+                                <option value="9" <%= listaDeProductos[i].stock === 9 ? 'selected' : '' %>>9</option>
+                                <option value="10" <%= listaDeProductos[i].stock === 10 ? 'selected' : '' %>>10</option>
                             </select>
                         </td>
 
                         <td>
 
                             <div class="grupoBotonesDeAccion">
+
                                 <form class="formAcciones" action="" method="post">
                                     <button class="btnActualizarProducto" type="submit">
                                         <i class="fa-solid fa-pencil"></i>
                                     </button>
                                 </form>
 
-                                <form class="formAcciones" action="" method="post">
+                                <form class="formAcciones" action="/admin/productos/eliminarProducto/<%= listaDeProductos[i].id %>?_method=DELETE" method="post">
                                     <button class="btnEliminarProducto" type="submit">
                                         <i class="fa-solid fa-trash-can"></i>
                                     </button>
                                 </form>
+
                             </div>
 
                         </td>
                     </tr>
 
-                </tbody>
+                    <% } %>
+
+                    </tbody>
 
             </table>
 
@@ -129,7 +165,7 @@
 
     </main>
 
-    <%- include('../../partials/Footer') %>
+    <!-- <%- include('../../partials/Footer') %> -->
 
 </body>
 </html>

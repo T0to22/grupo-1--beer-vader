@@ -5,6 +5,5 @@ const generalController = require("../controllers/generalController")
 
 router.get('/', generalController.landing)  
 router.get('/inicio', generalController.index)
-// router.get('*', generalController.error404)
 
 module.exports = router
