@@ -9,50 +9,8 @@
   "ibu": 7,
   "abv": 4,
   "precio": "450.00",
-  "imagen": "1658600659053.png",
+  "imagen": "1658607329388.png",
   "stock": 4,
   "ancla": "hansolo-beer"
- },
- {
-  "id": 3,
-  "nombre": "R2-D2",
-  "tipo": "Kölsch Beer",
-  "descripcion": "La Kölsch es una especialidad local de cerveza elaborada en Colonia (Alemania). Es una cerveza clara, su tonalidad es amarilla brillante y tiene un gusto prominente, pero no extremo de lúpulo.",
-  "aroma": "Es una cerveza dorada, fresca en aroma.",
-  "sabor": "Goza de un alegre sabor frutado con un acabado seco del lúpulo final.",
-  "ibu": 7,
-  "abv": 4,
-  "precio": 200,
-  "imagen": "r2d2.png",
-  "stock": 10,
-  "ancla": "r2d2-beer"
- },
- {
-  "id": 4,
-  "nombre": "Storm Trooper",
-  "tipo": "Scottish Beer",
-  "descripcion": "Cerveza de origen escocés, que se desarrolló como una adaptación del estilo Pale Ale Inglés, pero con menor contenido alcohólico, color más rojizo, y amargor más suave.",
-  "aroma": "Se caracteriza por un pronunciado carácter malteado.",
-  "sabor": "Amargor leve y una terminación ligeramente dulce, contenido alcohólico medio, buen cuerpo y excelente sabor.",
-  "ibu": 7,
-  "abv": 4,
-  "precio": 200,
-  "imagen": "storm-trooper.png",
-  "stock": 10,
-  "ancla": "stormtrooper-beer"
- },
- {
-  "id": 5,
-  "nombre": "Chuwbacca",
-  "tipo": "Pale Ale Beer",
-  "descripcion": "De graduación alcohólica alta, es un tipo de cerveza preciada y realmente gustosa. Suele ser natural, ya que no lleva aditivos ni conservantes, sino levadura no filtrada.",
-  "aroma": "Con un color algo más claro, el sabor es cremoso y suave, muy puro al ser artesanal y tan natural.",
-  "sabor": "Nos ofrece toques cítricos y algo amargos.",
-  "ibu": 7,
-  "abv": 4,
-  "precio": 200,
-  "imagen": "chuwbacca.png",
-  "stock": 10,
-  "ancla": "chuwbacca-beer"
  }
 ]

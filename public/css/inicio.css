@@ -59,7 +59,35 @@ footer{
     color: #f1f1f1;
 }
 
-.grupoLatas{
+.grupoLatas1{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 90%;
+}
+
+.grupoLatas2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 90%;
+}
+
+.grupoLatas3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 90%;
+}
+
+.grupoLatas4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 90%;
+}
+
+.grupoLatas5{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
