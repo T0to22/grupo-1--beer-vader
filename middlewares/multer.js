@@ -11,25 +11,24 @@ const storage = multer.diskStorage({
 	}
 });
 
-// const upload = multer({ storage });
+const upload = multer({ storage });
 
-const upload = multer({
-	storage,
-	fileFilter(req, file, cb) {
-		const ext = path.extname(file.originalname).toLowerCase();
-		if (ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg') {
+// const upload = multer({
+// 	storage,
+// 	fileFilter(req, file, cb) {
+// 		const ext = path.extname(file.originalname).toLowerCase();
+// 		if (ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg') {
 
-			req.body.titulo = 'Error';
-            req.body.mensaje = 'El archivo elegido no es una imagen';
-            req.body.descripcion = 'El Emperador solo permite archivos JPG, PNG o JPEG.'
-    
-            // cb(res.send(productsController.errorArchivo(req,res)), false)
+// 			req.body.titulo = 'Error';
+//             req.body.mensaje = 'El archivo elegido no es una imagen';
+//             req.body.descripcion = 'El Emperador solo permite archivos JPG, PNG o JPEG.'
 
-			cb(new Error('Error: Unacceptable file format'), false);
-		} else {
-			cb(null, true);
-		}
-	}
-});
+// 			cb(new Error('Error: Unacceptable file format'), false);
+
+// 		} else {
+// 			cb(null, true);
+// 		}
+// 	}
+// });
 
 module.exports = upload;

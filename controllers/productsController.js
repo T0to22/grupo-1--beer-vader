@@ -66,7 +66,6 @@ const productsController = {
 			producto: producto,
 			listaDeProductos: listaDeProductosObjeto
 		});
-
 	},
 	guardarEdicionProducto: (req, res) => {
 		let productoId = req.params.id;
@@ -101,8 +100,18 @@ const productsController = {
 		res.redirect('/admin/productos/abmProductos');
 	},
 	errorArchivo: (req, res) => {
-
+		
 		let error = req.body;
+
+		// Elimino el archivo de la imagen
+		if (req.file) {
+			
+			let pathImagen = PATH.resolve(__dirname, `../public/images/productos/${req.file.filename}`);
+			
+			if (fs.existsSync(pathImagen)) {
+				fs.unlinkSync(pathImagen);
+			}
+		}
 
 		res.render('errores/archivos', {
 			hojaCSS: 'archivos',
