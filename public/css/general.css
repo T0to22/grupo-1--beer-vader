@@ -104,6 +104,10 @@ footer {
 .imgSocialesFooter {
     max-width: 50px;
     margin: 20px;
+
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+
 }
 
 /* PRODUCTOS FOOTER */

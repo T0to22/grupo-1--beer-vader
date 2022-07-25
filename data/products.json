@@ -1,16 +1,16 @@
 [
-	{
-		"id": 2,
-		"nombre": "Han Solo",
-		"tipo": "Helles Beer",
-		"descripcion": "Cerveza lager pálida tradicionalmente del sur de Alemania. Creada en Munich en 1895 en la cervecería Spaten por Gabriel Sedlmayr con el objeto de competir con las cervezas estilo Pilsner.",
-		"aroma": "Tiene un sabor a malta más suave que la Pilsner.",
-		"sabor": "Debido a su extraordinario sabor se popularizó rápidamente, y aún hoy en día sigue siendo muy popular, especialmente en el sur de Alemania. A diferencia de las pils, es menos amarga.",
-		"ibu": 7,
-		"abv": 4,
-		"precio": "450.00",
-		"imagen": "1658607329388.png",
-		"stock": 4,
-		"ancla": "hansolo-beer"
-	}
+ {
+  "id": 2,
+  "nombre": "Han Solo",
+  "tipo": "Helles Beer",
+  "descripcion": "Cerveza lager pálida tradicionalmente del sur de Alemania. Creada en Munich en 1895 en la cervecería Spaten por Gabriel Sedlmayr con el objeto de competir con las cervezas estilo Pilsner.",
+  "aroma": "Tiene un sabor a malta más suave que la Pilsner.",
+  "sabor": "Debido a su extraordinario sabor se popularizó rápidamente, y aún hoy en día sigue siendo muy popular, especialmente en el sur de Alemania. A diferencia de las pils, es menos amarga.",
+  "ibu": 7,
+  "abv": 4,
+  "precio": "450.00",
+  "imagen": "1658607329388.png",
+  "stock": 4,
+  "ancla": "hansolo-beer"
+ }
 ]
