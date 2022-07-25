@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
+
     <%- include('./partials/Head') %>
 
 <body>
@@ -13,23 +13,23 @@
         <section class="logoPrincipal">
 
             <div class="contenedorLogoPrincipal">
-                <img class="logoBeerVaderPrincipal" src="images/logos/logo.png" alt="">
+                <img class="logoBeerVaderPrincipal" src="images/logos/logo.png">
             </div>
 
         </section>
 
         <section class="productosPrincipal">
 
-            <div class="grupoLatas1">
+            <div class="grupoLatas<%= listaDeProductos.length %>">
 
                 <% for( let i = 0; i < listaDeProductos.length; i++ ) { %>
 
-                <a class="linkProductoPrincipal" href="/productos#<%= listaDeProductos[i].ancla %> ">
+                <a class="linkProductoPrincipal" href="/productos#<%= listaDeProductos[i].ancla %>">
                     <img class="imgProductoPrincipal" src="images/productos/<%= listaDeProductos[i].imagen %>">
                 </a>
 
                 <% } %>
-                
+
             </div>
 
         </section>

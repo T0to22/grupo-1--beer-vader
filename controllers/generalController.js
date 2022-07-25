@@ -10,6 +10,7 @@ const generalController = {
         res.render ("landing", {hojaCSS: "landing"});
     },
     index: (req, res) => {
+
         res.render ('index', {hojaCSS: "inicio", listaDeProductos: listaDeProductosObjeto});
     }
 }

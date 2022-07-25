@@ -68,21 +68,21 @@ footer{
 
 .grupoLatas2{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     width: 90%;
 }
 
 .grupoLatas3{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     width: 90%;
 }
 
 .grupoLatas4{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     width: 90%;
 }
