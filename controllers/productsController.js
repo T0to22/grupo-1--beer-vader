@@ -96,7 +96,6 @@ const productsController = {
 
 		// Guardo el cambio en el JSON
 		fs.writeFileSync(productosJSON, JSON.stringify(listaDeProductosObjeto, null, ' '));
-
 		res.redirect('/admin/productos/abmProductos');
 	},
 	errorArchivo: (req, res) => {
